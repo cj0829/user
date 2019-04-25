@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.panel.window{position:relative;  background:#fc7fa3; position:fixed;border-radius:0;border:none !important;filter:none;}
+.window .window-header{background:#fff; padding:0;}
+.window .window-header .panel-title{height:46px; line-height:46px; font-family:"微软雅黑"; color:#333; font-size:16px;padding:0 0 0px 15px;}
+.window .panel-header, .panel-body,
+.window .window-body{border: none !important;}
+.window .window-body{background:#fff;}
+.window .window-header .panel-tool-close{background:url(images/close.png) no-repeat; margin-right: 8px; margin-top:2px;}
+.easyui-top-wrap{display:inline;}
+
+.panel.window.message{ background:#fc7fa3;}
+.window.message .window-body{background:#fff;color:#333;}
+.window.message .window-header .panel-title{height:25px; line-height:25px;font-size:14px;}
+.window.message .window-header{padding:0;}
+.window .panel-header{filter:none;}
+.messager-expand-window .l-btn{border-radius:0; outline:none;}

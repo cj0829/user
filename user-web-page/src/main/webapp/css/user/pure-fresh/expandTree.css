@@ -1,0 +1,47 @@
+ .file-icon {
+	background: url('images/folde-icon.png') no-repeat -16px 0;
+}
+
+.folder-icon {
+	background: url('images/folde-icon.png') no-repeat 0;
+}
+.main-search-criteria ul.tree,.main-search-criteria ul.tree ul{padding:0; overflow:visible;}
+.main-search-criteria ul.tree li{margin:0; float:none;}
+
+.wincourseware-tree-box .tree-title a{color:#000b63;}
+.wincourseware-tree-box .tree-folder,.wincourseware-tree-box .tree-file{ background:url('images/single_page.png') no-repeat; }
+.wincourseware-tree-box .tree-collapsed{background: url('images/bullet_toggle_plus.png') no-repeat 4px 4px;}
+.wincourseware-tree-box .tree-expanded{background: url('images/bullet_toggle_minus.png') no-repeat 4px 4px;}
+
+.m-expand-tree .tree-node-selected{background:#f0f2f5;}
+.m-expand-tree .tree-node-selected{ color:#000;}
+.m-expand-tree .tree-node-hover{background:#f0f2f5; color:#000;}
+.m-expand-tree .tree-folder{width:22px; height:25px; background:url(images/expand-tree_icons.png) no-repeat -69px 0;}
+.m-expand-tree .tree-folder-open{background:url(images/expand-tree_icons.png) no-repeat -92px 0;}
+.m-expand-tree .tree-file{width:22px; height:25px; background:url(images/expand-tree_icons.png) no-repeat -116px 0;}
+
+.m-expand-tree .tree-node{height:25px;}
+.m-expand-tree .tree-title{height:25px; line-height:25px;}
+.m-expand-tree .tree-collapsed{margin-top:4px;}
+
+.drop-down-tree{display:inline;}
+.drop-down-tree .panel{border:1px solid #ccc; padding-bottom:0;}
+
+.m-expand-tree .tree-checkbox0{margin-top:2px; background:url(images/expand-tree_icons.png) no-repeat -211px 0;}
+.m-expand-tree .tree-checkbox1{margin-top:2px; background:url(images/expand-tree_icons.png) no-repeat -227px 0;}
+.m-expand-tree .tree-checkbox2{margin-top:2px; background:url(images/expand-tree_icons.png) no-repeat -243px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+.form-tab-wrap .panel-body{background-color: #fff;}
+.form-tab-wrap .datagrid-body td,.form-tab-wrap .datagrid-footer td{border-color:#f0f2f5; color: #333; border-style:solid; border-width:0 0 1px 0;}
+.form-tab-wrap .datagrid-header td{border-width:0; color: #fff;}
+.form-tab-wrap .datagrid-header,.form-tab-wrap .datagrid-td-rownumber{filter:none;border-width: 0 0 1px 0;border-style: solid;background:#eff5ff;border-color:#e8e8e8;filter:none;border-top:2px solid #4b57a3;}
+.form-tab-wrap .datagrid-header td.datagrid-header-over{background:#4b57a3;}
+.form-tab-wrap .datagrid-row-over{background:#f3f3f3;}
+.form-tab-wrap .datagrid-row-selected{background:#f3f3f3;}
+
+.form-tab-wrap .datagrid-pager{background:#f2f5f8; border:0;}
+.form-tab-wrap .datagrid-pager .l-btn { outline:none; color: #fff;background:url("images/touming20.png");background-repeat: repeat;filter: none;-moz-border-radius: 0px 0px 0px 0px;-webkit-border-radius: 0px 0px 0px 0px;border-radius: 0px 0px 0px 0px;margin:0 2px;}
+.form-tab-wrap .datagrid-pager  .l-btn-selected,.form-tab-wrap .datagrid-pager  .l-btn-selected:hover {background:#00c484;filter: none;color:#fff;}
+
+.pop-dropdownmenu-con .datagrid-toolbar,.pop-dropdownmenu-con .datagrid .panel-body{background: none;}
+.pop-dropdownmenu-con.bgcolor .datagrid .panel-body{background:url("images/touming10.png") repeat;}
+
+.pop-dropdownmenu-con .datagrid-header,.pop-dropdownmenu-con .datagrid-td-rownumber{background:#eff5ff;filter:none;}
+.pop-dropdownmenu-con .datagrid-header td,.pop-dropdownmenu-con .datagrid-body td,.pop-dropdownmenu-con .datagrid-footer td{border-color:#f0f2f5; color: #333; border-style:solid; border-width:0 0 1px 0;}
+.pop-dropdownmenu-con .datagrid-header td{color:#fff;}
+.pop-dropdownmenu-con .datagrid-body td{font-size:12px;}
+.pop-dropdownmenu-con .datagrid-header td.datagrid-header-over{background:#4b57a3;}
+.pop-dropdownmenu-con .datagrid-row-over{background:#f2f5f8;}
+.pop-dropdownmenu-con .datagrid-body,.mian-role-pop .datagrid-body{background:#fff;}
+.pop-dropdownmenu-con .datagrid-header,.pop-dropdownmenu-con .datagrid-pager,.pop-dropdownmenu-con .datagrid-footer-inner{border-top:2px solid #4b57a3;}
+.pop-dropdownmenu-con .datagrid-toolbar{border-color:#ccc;}
+
+.pop-dropdownmenu-con .datagrid-row-selected{ background:#f2f5f8;}
+.pop-dropdownmenu-con .datagrid-pager{ border-top:1px solid #f0f2f5;}
+
+.pop-dropdownmenu-con-float .datagrid-wrap{padding:10px;}
+.pop-dropdownmenu-con-float .panel{background:#f3f3f3; padding:2px;}
+.pop-dropdownmenu-con-float.pop-dropdownmenu-con .panel-body{ background:#fff; color:#333;}
+
+.pagination-info{color: #999;}
+.pop-dropdownmenu-con .datagrid-pager .l-btn{background:url("images/touming30.png"); border-radius:0; color:#fff; filter:none; margin:0 2px 0 5px;}
+
+.main-tabwrap-box .form-tab-wrap .panel-body{background:none;;}
+
+.main-course-tab .form-tab-wrap .datagrid-body td,.main-course-tab .form-tab-wrap .datagrid-footer td{border-width:0 1px 1px 0;border-style:dotted;}
+
+.pop-dropdownmenu-con .datagrid .panel-body.combo-panel{background: #fff; padding:0;}
+.pop-dropdownmenu-con-float .panel-body .combobox-item{color:#000;}
+
+.pop-dropdownmenu-nopadding.pop-dropdownmenu-con-float .panel{padding:0;} 
+
+.pop-dropdownmenu-con .datagrid-header .datagrid-cell span{color:#61768b;}
+.pop-dropdownmenu-con .datagrid-header td.datagrid-header-over span{color:#fff;}
+
+.form-tab-wrap .datagrid-header .datagrid-cell span{color:#61768b;}
+.form-tab-wrap td.datagrid-header-over .datagrid-cell span{color:#fff;}

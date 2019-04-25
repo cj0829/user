@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+	<!-- 权限过滤器 start -->
+	<bean id="filterChainProxy" class="org.csr.core.security.filter.FilterChainProxy">
+		<property name="filters">
+			<list>
+				<!-- <ref local="qualificationFilter"/> -->
+				<!-- <ref local="backtrackFilter"/> -->
+				<ref local="examPageEhCacheFilter" />
+				<ref local="loginAuthenticationFilter" />
+				<!-- <ref local="anonymousManagementFilter"/> -->
+				<ref local="sessionManagementFilter" />
+				<ref local="securityResourceFilter" />
+				<ref local="logFilter"/>
+			</list>
+		</property>
+		<property name="exceptionChains">
+			<list>
+				<ref local="validationDaoService" />
+				<ref local="validationConstraintViolation" />
+				<ref local="validationObjectOptimisticLocking" />
+				<ref local="dubboRunTimeException" />
+				<ref local="lastChainException" />
+			</list>
+		</property>
+		<!-- 不需要验证的url -->
+		<property name="pathUnMatch">
+			<list>
+				<value>/**/*.shtml</value>
+				<value>/**/*.html</value>
+				<value>/**/*.jpg</value>
+				<value>/**/*.jsp</value>
+				<value>/**/*.gif</value>
+				<value>/**/*.pdf</value>
+				<value>/**/*.js</value>
+				<value>/**/*.css</value>
+				<value>/**/*.png</value>
+				<value>/**/*.inc</value>
+				<value>/**/*.cab</value>
+				<value>/**/*.CAB</value>
+				<value>/inline/**</value>
+				<value>/download/**</value>
+				<value>/html/**</value>
+				<value>/temp/**</value>
+				<value>/css/**</value>
+				<value>/js/**</value>
+				<value>/images/**</value>
+				<value>/include/**</value>
+				<value>/editor/**</value>
+				<value>/jwplayer/**</value>
+				<value>/index.jsp</value>
+			</list> 
+		</property>
+		
+		<!-- 保存session， -->
+		<property name="sessionMatch">
+			<list>			
+				<value>/login.jsp</value>
+				<value>/file/verificationCode.action</value>
+				<value>/file/verificationCode.action</value>
+				<value>/dictionary/situationDictionary.action</value>
+				<value>/agencies/ajax/findDropDownTree.action</value>
+				<value>/file/ajax/**</value>
+				<value>/cb/ajax/info.action</value>
+				<value>/deleteImg/ajax/deleteImg.action</value>
+				<value>/randomuuid/ajax/uuid.action</value>
+				<value>/userPasswordProblem/gotoFindPassword.action</value>
+				<value>/userPasswordProblem/ajax/findPassword.action</value>
+				<value>/userPasswordProblem/gotoResetPassword.action</value>
+				<value>/userPasswordProblem/ajax/resetPassword.action</value>
+				<value>/userRegister/ajax/regUser.action</value>
+				<value>/userRegister/preRegUser.action</value>
+				<value>//mobile/mobileUser/preRegUser.action</value>
+				<value>/mobile/mobileUser/ajax/regUser.action</value>
+				<value>/proxy/**/**</value>
+				<value>/attendance/app/**</value>
+				<value>/general/app/**</value>
+				<value>/sev/face/**</value>
+				<value>/vistor/app/**/</value>
+				<value>/wisecraftsman/app/**</value>
+				<value>/school/app/sport/ajax/**</value>
+				<value>/school/app/stuParents/ajax/**/</value>
+				<value>/school/app/stuSearch/ajax/**</value>
+				<value>/agencies/ajax/treeCompanyList.action</value>				
+				<value>/stuVacation/ajax/**</value>
+				<value>/stuVacation/**</value>
+				<value>/mobile/punch/**</value>
+				<value>/gmap/ajax/**</value>
+				<value>/mobile/mobileUser/ajax/createRegUserAgencies.action</value>
+				<value>/general/app/ajax/createRegUserAgencies.action</value>
+			</list> 
+		</property>
+		<!--登录页面 必填 -->
+		<property name="loginFormUrl" value="/login.jsp" />
+		<!-- <property name="sessionManagerMode" value="redisSession"></property>
+		<property name="maxInactiveInterval" value="36000"></property> -->
+	</bean>
+
+	<!-- begin 异常处理链 -->
+	<bean id="jumpStrategy" class="org.csr.core.jump.SimpleJumpStrategy">
+		<constructor-arg name="defaultTargetUrl" value="/login.jsp" />
+	</bean>
+	
+	<bean id="validationDaoService" class="org.csr.core.security.filter.exception.ValidationDaoService">
+		<constructor-arg name="returnHandler" ref="jumpStrategy"/>
+	</bean>
+	<bean id="validationConstraintViolation" class="org.csr.core.persistence.exception.ValidationConstraintViolation">
+		<constructor-arg name="returnHandler" ref="jumpStrategy"/>
+	</bean>
+	<bean id="validationObjectOptimisticLocking" class="org.csr.core.persistence.exception.ValidationObjectOptimisticLocking">
+		<constructor-arg name="returnHandler" ref="jumpStrategy"/>
+	</bean>
+	<bean id="dubboRunTimeException" class="org.csr.core.security.filter.exception.DubboRunTimeException">
+		<constructor-arg name="returnHandler" ref="jumpStrategy"/>
+	</bean>
+	<bean id="lastChainException" class="org.csr.core.security.filter.exception.LastChainException">
+		<constructor-arg name="returnHandler" ref="jumpStrategy"/>
+	</bean>
+	<!-- end 异常处理链 -->
+	
+	<!-- 页面缓存 -->
+	<bean id="examPageEhCacheFilter" class="org.csr.core.security.filter.PageEhCacheFilter">
+		<!-- 页面需要缓存的url -->
+		<property name="cacheURLs">
+			<list>
+				<value>/examMessage/ajax/findMessageContent.action</value>
+				<value>/sysUser/ajax/examing.action</value>
+				<value>/sysUser/ajax/marking.action</value>
+				<value>/sysUser/ajax/release.action</value>
+			</list>
+		</property>
+		<property name="blockingTimeoutMillis" value="20"></property>
+		<property name="cacheName" value="SimplePageCachingFilter"></property>
+	</bean>
+
+	<!-- 认证过滤器 -->
+	<bean id="loginAuthenticationFilter" class="org.csr.core.security.filter.LoginAuthenticationFilter">
+		<!--登录url方式：ajax -->
+		<property name="actionMode" value="true" />
+		<!--登录验证url -->
+		<property name="securityCheckUrl" value="/login" />
+		<!--登录失败返回的url -->
+		<property name="errorURL" value="/login.jsp" />
+		<!--登录成功跳转url -->
+		<property name="successUrl" value="/user/preHome.action" />
+		<!-- <property name="successUrl" value="/org/preList.action"/> -->
+		<property name="authenticationService" ref="userFacade" />
+		<!--登录日志 -->
+		<property name="loginLogSecurity" ref="loginLogService" />
+	</bean>
+
+	<!-- 匿名管理过滤器 -->
+	<bean id="anonymousManagementFilter" class="org.csr.core.security.filter.AnonymousManagementFilter">
+		<!-- 是否允许匿名访问 -->
+		<property name="anonymous" value="false" />
+	</bean>
+	<!-- session管理过滤器 -->
+	<bean id="sessionManagementFilter" class="org.csr.core.security.filter.SessionManagementFilter">
+		<!--无法获取正常的session返回的页面 -->
+		<property name="errorURL" value="/login.jsp" />
+		<property name="defaultSessionUrl">
+    		<list>
+    			<value>/person/*.action</value>
+    			<value>/person/examHeader.action</value>
+    			<value>/**/find*.action</value>
+    			<value>/**/count*.action</value>
+    			<value>/**/*Info.action</value>
+    			<value>/examMessage/**</value>
+    			<value>/fileDialogs/**.action</value>
+    			<value>/user/ajax/saveHeadPortrait.action</value>
+    			<value>/examination/ajax/findUserExaminationList.action</value>
+    		</list>
+    	</property>
+	</bean>
+
+	<!-- 权限管理过滤器 -->
+	<bean id="securityResourceFilter" class="org.csr.core.security.filter.SecurityResourceFilter">
+		<!-- 登录用户默认能够访问的url资源 -->
+		<property name="defaultPermissionsUrl">
+			<list>
+				<value>/user/preHome.action</value>
+				<value>/person/*.action</value>
+				<value>/**/find*.action</value>
+				<value>/**/check*.action</value>
+				<value>/**/count*.action</value>
+				<value>/**/*Info.action</value>
+				<value>/**/**</value>
+			</list>
+		</property>
+		<property name="securityService" ref="functionpointService" />
+		<property name="menuNodeService" ref="menuFacade" />
+	</bean>
+	<!-- 权限过滤器 end -->
+
+	<!-- 操作日志 -->
+	<bean id="logFilter" class="org.csr.core.security.filter.LogFilter" />
+	
+</beans>
+

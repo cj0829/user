@@ -1,0 +1,64 @@
+.form-tab-wrap .panel-body{background-color: none;background:url("images/touming10.png");}
+.form-tab-wrap .datagrid-body td,.form-tab-wrap .datagrid-footer td{border-color:#c3c3c3; color: #fff; border-style:solid; border-width:0 0 1px 0;}
+.form-tab-wrap .datagrid-header td{border-width:0; color: #fff;}
+.form-tab-wrap .datagrid-header,.form-tab-wrap .datagrid-td-rownumber{background:url("images/touming30.png") repeat;filter:none;}
+.form-tab-wrap .datagrid-header,.form-tab-wrap .datagrid-toolbar,.form-tab-wrap .datagrid-pager,.form-tab-wrap .datagrid-footer-inner{border-color:#c3c3c3;}
+.form-tab-wrap .datagrid-row-over,.form-tab-wrap .datagrid-header td.datagrid-header-over{background:url("images/touming20.png");}
+.form-tab-wrap .datagrid-row-selected{background:url("images/touming20.png");}
+
+.form-tab-wrap .datagrid-pager{background:url("images/touming10.png") repeat; border:0;}
+.form-tab-wrap .datagrid-pager .l-btn {color: #fff;background:url("images/touming20.png");background-repeat: repeat;filter: none;-moz-border-radius: 0px 0px 0px 0px;-webkit-border-radius: 0px 0px 0px 0px;border-radius: 0px 0px 0px 0px;margin:0 2px;}
+.form-tab-wrap .datagrid-pager .l-btn-selected,.form-tab-wrap .datagrid-pager .l-btn-selected:hover{background:#766fb5;filter: none;color:#fff;}
+
+/*.pop-dropdownmenu-con .panel-body{ background: none; width:400px !important;}*/
+.pop-dropdownmenu-con .datagrid-toolbar,.pop-dropdownmenu-con .datagrid .panel-body{background: none;}
+.pop-dropdownmenu-con.bgcolor .datagrid .panel-body{background:url("images/touming10.png") repeat;}
+
+.pop-dropdownmenu-con .datagrid-header,.pop-dropdownmenu-con .datagrid-td-rownumber{background:url(images/touming30.png);filter:none;}
+.pop-dropdownmenu-con .datagrid-header td,.pop-dropdownmenu-con .datagrid-body td,.pop-dropdownmenu-con .datagrid-footer td{border-color:#c3c3c3; color: #fff; border-style:solid; border-width:0 0 1px 0;}
+.pop-dropdownmenu-con .datagrid-body td{font-size:12px;}
+.pop-dropdownmenu-con .datagrid-row-over,.pop-dropdownmenu-con .datagrid-header td.datagrid-header-over{background:url("images/touming20.png");}
+.pop-dropdownmenu-con .datagrid-body,.mian-role-pop .datagrid-body{background:url("images/touming10.png");}
+.pop-dropdownmenu-con .datagrid-header,.pop-dropdownmenu-con .datagrid-pager,.pop-dropdownmenu-con .datagrid-footer-inner{border:0;}
+
+.pop-dropdownmenu-con .datagrid-row-selected{ background:url("images/touming20.png");}
+.pop-dropdownmenu-con .datagrid-pager{background:url("images/touming10.png") repeat; border-top:1px solid #c3c3c3;}
+
+.pop-dropdownmenu-con-float .datagrid-wrap{padding:10px;}
+.pop-dropdownmenu-con-float .panel{background:url(images/bg.jpg) no-repeat center; padding:2px;}
+.pop-dropdownmenu-con-float.pop-dropdownmenu-con .panel-body{ background:url("images/touming10.png") repeat; color:#fff;}
+
+/*��ʱȥ�� ���޷�������*/
+/*.pop-dropdownmenu-con .datagrid-view{width:400px !important; height: 114px !important;}*/
+
+
+.pagination-info{color: #fff;}
+.pop-dropdownmenu-con .datagrid-pager .l-btn{background:url("images/touming20.png"); border-radius:0; color:#fff; filter:none; margin:0 2px;}
+.pop-dropdownmenu-con .datagrid-pager .l-btn-selected{background:#766fb5;}
+
+.mian-role-pop.pop-dropdownmenu-con{background:none;}
+.mian-role-pop .butcombo-p .panel{ padding:10px; background:url("images/touming20.png");}
+.mian-role-pop .panel-body{background:url(images/bg.jpg) no-repeat fixed center; padding:4px;}
+/* .mian-role-pop.pop-dropdownmenu-con .datagrid-view{height: 92px !important;} */
+/* .pop-dropdownmenu-con .datagrid-body{ height:90px !important;} */
+.main-tabwrap-box .form-tab-wrap .panel-body{background:none;;}
+/* ���ҳ����ɫ��ʾ��ɫ����ȥ�� */
+/* .main-formtab .pagination-info{ color:#000;} */
+
+.main-course-tab .form-tab-wrap .datagrid-body td,.main-course-tab .form-tab-wrap .datagrid-footer td{border-width:0 1px 1px 0;border-style:dotted;}
+
+
+.pop-dropdownmenu-con .datagrid .panel-body.combo-panel{background: #fff; padding:0;}
+.pop-dropdownmenu-con-float .panel-body .combobox-item{color:#000;}
+.pop-dropdownmenu-con-float .datagrid .panel{padding:0;}
+
+.sessintemp .panel{padding:4px; background:url(images/bg.jpg) no-repeat fixed center;}
+.sessintemp .panel-body{padding:10px; background:url(images/touming20.png);}
+
+.pop-dropdownmenu-nopadding.pop-dropdownmenu-con-float .panel{padding:0;} 
+
+/*a名称内容详情弹框*/
+.main-alinkwin .panel-body{background:url(images/bg.jpg) no-repeat fixed center; border:1px solid #ccc;}
+
+/*类似价格那的 下拉表格被遮盖*/
+.ex-panel .panel{overflow: visible;}

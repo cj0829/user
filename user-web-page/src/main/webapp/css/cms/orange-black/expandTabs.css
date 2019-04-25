@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*table*/
+.main-tableContainer{margin:10px 16px 0; }
+.main-tableContainer .panel-body{background:#50597B;}
+
+/*table内容样式*/
+.main-tableContainer .img{ float:left;}
+.main-tableContainer .text{ float:left; margin-left:10px; padding:10px 0;}
+.main-tableContainer .text .tit{ font-size:14px; color:#fff;}
+.main-tableContainer .text .date{ font-size:12px; color:#fff;}
+.main-tableContainer .text .date a{ color:#8F99B7;}
+.main-tableContainer .status .bar{ color:#fff;}
+.main-btn0{ background:#E64C65; display:inline-block; height:22px; padding:0 10px; line-height:22px; color:#fff;}
+.main-btn0:hover{ color:#fff; background:#ef5971;}
+.main-btn0 span{display:block; float:left;}
+.main-btn0 em{ margin-left:5px; display:inline-block; width:12px; height:22px; background:url(images/drop-down-triangle.png) no-repeat center;}
+
+/*表头样式*/
+.main-tableContainer .datagrid-header {
+  overflow: hidden;
+  cursor: default;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  background:#11A8AB;
+  border-color: #394264;
+}
+
+.main-tableContainer .datagrid-body{
+	 overflow: hidden;
+}
+.main-tableContainer .datagrid-htable td{ padding:10px 0; }
+.main-tableContainer .datagrid-htable .datagrid-cell span{
+	font-weight:bold;font-size: 14px;color:#fff;
+}
+
+.main-tableContainer .datagrid-body td,.main-tableContainer .datagrid-htable td{
+	border-right:none;
+	border-bottom:1px solid #394264;
+}
+.main-tableContainer .datagrid-row-over,
+.main-tableContainer .datagrid-header td.datagrid-header-over {
+  background: #3C466C;
+}
+
+.main-tableContainer .datagrid-btable .datagrid-row-selected{
+	background:#3C466C;
+	color: #FFF;
+}
+
+.datagrid-btable .operate{ position:relative;}
+.datagrid-btable .operate .main-username-menu{ right:auto; left:0; width:108px; top:27px;}
+
+
+/**treegrid*/
+.main-tableContainer .datagrid-btable .tree-folder{
+}
+.main-tableContainer .datagrid-btable .treegrid-tr-tree td{
+	padding: 0;
+}
+.main-tableContainer .datagrid-btable  .tree-title{
+	height: auto;
+}
+
+.main-tableContainer .datagrid-btable .tree-collapsed{
+	background:none;
+}
+.main-tableContainer .datagrid-btable .tree-expanded{
+	background: none;
+}
+
+.main-tableContainer .datagrid-btable .tree-icon.tree-folder.tree-expanded{
+	margin-top:10px;
+	background: url('images/tree_icon.png') no-repeat -18px 0px;
+}
+
+.main-tableContainer .datagrid-btable .tree-icon.tree-folder.tree-collapsed {
+	margin-top:10px;
+	background: url('images/tree_icon.png') no-repeat  0px 0px;
+}
+.main-tableContainer .datagrid-btable .tree-file {
+	margin-top:10px;
+	background: url('images/tree_icon.png') no-repeat  -36px 0px;
+}
+.main-tableContainer .datagrid-btable .tree-indent.tree-indent-end-file{
+	background: url('images/tree_icon.png') no-repeat  -36px  0px;
+}
+.main-tableContainer .datagrid-btable .datagrid-row.tr-tree-haschild{
+	background-color: #3C466C;
+}
+.treegrid-tr-tree.treegrid-tr-tree-t .datagrid-btable{
+	background-color: #3C466C;
+}
+.treegrid-tr-tree.treegrid-tr-tree-f .datagrid-btable{
+	background-color: #3C466C;
+}

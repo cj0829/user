@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+.calendar-state-default {
+	border: 1px solid #d3d3d3;
+	background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+	font-weight: 400;
+	color: #555;
+}
+
+.calendar-today {
+	border: 1px solid #fcefa1;
+	background: #fbf9ee;
+}
+
+.calendar-span-other-month {
+	background: #fff;
+}
+
+.calendar-selected {
+	background: #fff;
+	border: 1px solid #d3d3d3;
+}
+
+.calendar-hover {
+	border: 1px solid #d3d3d3;
+	background: #eaf2ff;
+	color: #363636;
+}
+
+.calendar-disabled {
+	opacity: 0.3;
+	filter: alpha(opacity = 30);
+	cursor: default;
+}
+
+.calendar-dtable td span {
+	display: block;
+	padding-bottom:1px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.calendar-body th {
+	background: none;
+}
+.main-formtab .calendar table td{
+	padding: 1px;
+}
+.main-formtab .calendar table th{
+	text-align: center;
+	padding: 0px;
+}
+.main-formtab .calendar table th{
+	color: #000;
+}
+.calendar-body {
+	padding: 0 2px 2px 2px;
+}
+
+.main-formtab .datebox-button td{padding:0;}

@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*tabs切换*/
+.expand-tabs .tabs-header,.expand-tabs .tabs-tool{background: none;}
+.expand-tabs .tabs{height:40px !important; border-bottom:2px solid #e9eef2;padding:0;}
+.expand-tabs .tabs li a.tabs-inner{ border-radius:0; background:none; filter:none; border:0; height:40px !important;line-height:40px !important;}
+.expand-tabs .tabs li.tabs-selected a.tabs-inner,.expand-tabs .tabs li a.tabs-inner:hover{font-weight:normal; color:#4FC0E8;border-bottom: 2px solid #24c0fa;}
+.expand-tabs .tabs li a.tabs-inner .tabs-title{font-size:14px; font-family:"微软雅黑";}

@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.dialogBox .maskBox{ width:100%; height:100%; background:#fff; opacity:0.5; position:fixed; top:0; left:0; z-index:999;}
+.box_dialog{ padding:5px;  position:relative; width:600px; overflow:hidden; background:#fff; border:1px solid #ddd; position:fixed; z-index:999;}
+.box_dialog .dialog_title{ font-size:12px; font-weight:bold; height:16px; line-height:16px; padding:0 0 6px 0px;}
+.box_dialog .dialog_content{ padding:5px; overflow-y:auto; color:#404040; border:1px solid #ddd;}
+.box_dialog a.closebtn{ background:url(images/panel_tools.png) no-repeat;}
+.box_dialog a.closebtn{ background-position:-12px 3px; text-indent:-1000px; position:absolute; top:3px; right:3px; display:block; width:24px; height:22px;}
+.box_dialog .btnbox{ text-align:center;}
+.dialogBox{ display:none;}
+
+.tabwrap .tabbar{ margin-top:10px;}
+.tabbar .bara { margin-right:5px;padding:4px 10px; border:1px solid #ddd;}
+.tabbar .bara:hover{ text-decoration:none; background:#e6e6e6;}
+.tabbar .bara .text{ color:#444; }
+
+.form { margin-top:10px; border:1px solid #95b8e7;}
+.form .formtit{ border-bottom:1px solid #95b8e7; padding:5px;background: linear-gradient(to bottom, #eff5ff 0px, #e0ecff 100%) repeat-x scroll 0 0 rgba(0, 0, 0, 0);color: #0e2d5f;font-size: 12px;font-weight: bold;height: 16px; line-height: 16px;}

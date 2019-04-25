@@ -1,0 +1,49 @@
+@charset "utf-8"; 
+body{font-size:12px;font-family:"宋体";background: #F4F2F4;}
+a{color:#6C6C6C;}
+li{list-style:none;} 
+body,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,pre,code,
+form,fieldset,legend,input,button,
+textarea,p,blockquote,th,td{margin:0; padding:0;}   
+.ml15{margin-left:15px;} 
+.mainWindow {width:720px;margin:10px 0 0 5px;overflow:hidden;}
+.mainTitle {float:left;width:718px;height:30px;line-height: 32px;border:1px solid #c71e19;background:url(images/mainTitle.jpg) left top repeat-x;overflow: hidden;}
+.mainTitle h3 {padding:0 0 0 15px;margin:0 0 0 10px;font-size: 14px;color: #993333;}
+.mainContainer {float:left;width:718px;margin:5px 0;padding:0 0 20px 0;border:1px solid #c71e19;background: #F5F5F5;}
+.formBox {float: left;width: 100%;padding: 10px 0;}
+.formBox .formBoxItem {float: left;width: 100%;padding: 3px 0;line-height:26px;color:#3C3C3C;}
+.formBox .formBoxButton {padding: 10px 0;text-align: center;}
+.formBox .formBoxItem label {float: left;width: 140px;text-align:right;font-size: 12px;color:#3C3C3C;overflow: hidden;}
+.formBox .formBoxItem label span{color:#c71e19;width:15px;text-align:left;display:-moz-inline-box;display:inline-block;}
+.formBox .formBoxItem label.txt{width:auto;text-align:left;float:none;padding:0 3px;}
+.formBox .formBoxItem .list{width:560px;float:left;}
+.formBox .formBoxItem .list span{width:80px;display:-moz-inline-box;display:inline-block;line-height:18px;height:18px;overflow:hidden;} 
+.formBox .formBoxItem .list span label{float:none;width:auto;text-align:left;padding:0 0 0 5px;font-size:12px;color:#3C3C3C;overflow: hidden;} 
+.formBox .formBoxItem pre.content{float:left;width:538px;display:block;line-height:18px;word-break: break-all;word-wrap: break-word;white-space: pre-wrap; }
+.formBox .formBoxItem label.w60{width:60px;}
+.formBox .formBoxItem .editor{float:left;width:656px;}
+
+.formBox input.radio {line-height: 16px;padding: 2px 3px;font-size: 12px;color: #333;}
+.formBox input.checkbox {line-height: 16px;padding: 2px 3px;font-size: 12px;color: #333;}
+.formBox input.text {width: 250px;height: 16px;padding: 2px 3px;font-size: 12px;color: #333;}
+.formBox select.select {min-width:100px;height: 24px;font-size: 12px;color: #333;}
+.formBox input.file {width: 397px;height: 24px;padding: 2px 3px;font-size: 12px;color: #333;border: 1px solid #aaa;	background: #fff;}
+.formBox textarea.textarea {width: 438px;height: 106px;padding: 2px 3px;font-size: 12px;color: #333;}
+.formBox textarea.textarea2 {width: 538px;height: 206px;padding: 2px 3px;font-size: 12px;color: #333;}
+.formBox span.text {font-size: 12px;color: #475E92;}
+.formBox span.advert {color: #A72D3B;} 
+.formBox span.showImg {margin-left:10px;} 
+.btn {margin:10px 0 0 15px;letter-spacing:2px;padding:.4em;border:1px solid #fff;background:#c71e19 url(images/tr_back.gif) repeat-x;color:#ffffff;cursor:pointer;font-weight:bold;font-size:12px;} 
+
+.mainContainer2 ul a{float:left;width:222px;margin:10px 7px;border:1px solid #cccccc;}
+.mainContainer2 ul a .name{margin:5px;width:212px;height:20px;line-height:20px;overflow:hidden;text-align:center;}
+.mainContainer2 ul a img{margin:5px;height:160px;width:212px;}
+.mainContainer2 ul a.on{border:1px solid #c71e19;}
+.mainContainer2 ul a:hover{border:1px solid #FF0080;}
+
+.menu_tab{width:90%;padding:5px 10px;margin:10px 0;}  
+.menu_tab a{border-top:1px solid #C71E19;border-right:1px solid #C71E19;cursor:pointer;border-bottom:1px solid #C71E19;height:36px;line-height:20px;padding:7px 8px;color:#FFFFFF;background:#c71e19 url(images/tr_back.gif) repeat-x;}
+.menu_tab a.first{border-left:1px solid #C71E19;}
+.menu_tab a.current{border-bottom:1px solid #F4F2F4;background:none;color:#000000;}
+.menu_tab a:hover{border-bottom:1px solid #F4F2F4;background:none;color:#000000;}

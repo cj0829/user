@@ -1,0 +1,9 @@
+.role-tabwrap table{width:100%;border-collapse:collapse;}
+.role-tabwrap th{text-align:center;padding:4px;background:url("images/touming30.png");color:#FFFFFF;}
+.role-tabwrap td{background:url("images/touming10.png");padding:2px 5px;border:1px solid #d4d4d4;color:#FFFFFF;}
+.role-tabwrap tr.even td{background:#C4E1f5;}
+.role-tabwrap tr.odd td{background:#e0eff8;} 
+.role-tabwrap tr.over td{background:url("images/touming10.png");}
+.role-tabwrap td center{line-height:25px;} 
+.role-tabwrap td center img{margin-right:10px;}
+.role-tabwrap .f-left{ float:left;width:24%; padding:3px 1px;}

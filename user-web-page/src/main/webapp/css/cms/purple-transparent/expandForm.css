@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+.pop-dropdownmenu-con .textbox,.main-expand-form .textbox,.main-dropdown-pop .textbox,.main-dropdown-pop .textbox .textbox-text{border-radius:0;}
+.main-expand-form .textbox .textbox-text,.main-expand-form .easyui-combobox,.drop-down-tree .textbox{border-radius:0;}
+.main-table-operate .combobox-item{line-height: 20px;}
+.main-expand-form .easyui-searchbox{border-radius:0; border:1px solid #eaf2ff;}
+.easyui-validatebox.validatebox-invalid{ border-style:solid; border-width:1px;}
+
+.e-search-wrap .textbox,.e-form-mod .textbox,.e-form-mod .textbox .textbox-text{border-radius:0;}
+
+/*微调*/
+.textbox.spinner{border-color:#754670;}
+.spinner .spinner-arrow{background:url(images/expand-easyui.png) 0 -24px; }
+.spinner .spinner-arrow-up{background:url(images/expand-easyui.png) -19px -26px; opacity:1;}
+.spinner .spinner-arrow-down{background:url(images/expand-easyui.png) -35px -26px; opacity:1;}
+.spinner .spinner-arrow-up:hover{background:url(images/expand-easyui.png) -19px -40px;}
+.spinner .spinner-arrow-down:hover{background:url(images/expand-easyui.png) -35px -40px;}
+
+/*下拉select*/
+.textbox .textbox-addon{background:url(images/expand-easyui.png) 0 -24px;}
+.textbox .combo-arrow{background-color:transparent; opacity:1;background:url(images/expand-combo_arrow.png) center no-repeat;}
+.textbox .combo-arrow:hover{background:url(images/expand-combo_arrowh.png) center no-repeat;}
+.textbox.combo{border-color:#754670;}
+.expand-dropdown-select .combo-p{background:url(images/bg.jpg) no-repeat fixed center center; padding:2px;}
+.expand-dropdown-select .combo-panel{background:url(images/touming10.png) repeat;}
+.expand-dropdown-select .combobox-item-selected{background:url(images/touming30.png) repeat;}
+.expand-dropdown-select .combobox-item-hover{background:url(images/touming20.png) repeat;}
+.expand-dropdown-select .combobox-item,.expand-dropdown-select .combobox-group{color:#fff;}
+
+/*日期*/
+.textbox.datebox .combo-arrow{background:url(images/expand-date.png) no-repeat center;}
+.textbox.datebox .combo-arrow:hover{background:url(images/expand-dateh.png) no-repeat center;}

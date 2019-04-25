@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.panel.window{position:relative;  background:#fff; position:fixed;border-radius:0; border:0; padding:0; border-top:4px solid #24c0fa;filter:none;}
+.window .window-header{background:url("images/touming30.png") repeat; padding:0;}
+.window .window-header .panel-title{border-bottom:1px solid #eee; height:46px; line-height:46px; font-family:"微软雅黑"; color:#61768b; font-size:16px;padding:0 0 0px 15px;}
+.window .panel-header, .panel-body,
+.window .window-body{border: none !important;}
+.window .window-body{background:url("images/touming30.png") repeat;}
+.window .window-header .panel-tool-close{background:url(images/close.png) no-repeat; margin-right: 8px; margin-top:2px;}
+.easyui-top-wrap{display:inline;}
+
+.waitingbar-content{color:#000;}
+.panel.window.message{ background:#fff; border:1px solid #ccc;  border-top:2px solid #24c0fa;}
+.window.message .window-body{color:#61768b;}
+.window.message .window-header .panel-title{height:25px; line-height:25px;font-size:14px;}
+.window.message .window-header{padding:0;}
+.window.message .messager-error{background:url(images/expand-easyui.png) no-repeat -43px 0;}
+.window .panel-header{filter:none;}
+.messager-expand-window .l-btn{border-radius:0;background:url(images/touming50.png) repeat; color:#fff; border:0; outline:none; filter:none;}
+.messager-expand-window .l-btn:hover{background:url(images/touming30.png) repeat;}
+.messager-expand-window .panel-body{color:#fff;}
+.messager-expand-window .messager-question{background:url(images/expand-easyui.png) no-repeat -22px 0;}

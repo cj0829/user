@@ -1,0 +1,776 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,tr,th,td{margin:0; padding:0; font-size:inherit; word-wrap:break-word; word-break:break-all;}
+em { padding:0; margin:0; font-style:normal; word-wrap:break-word; word-break:break-all;}
+
+body{ font:normal 14px/1.5 "microsoft yahei","simsun",arial; color:#fff; }
+h1,h2,h3,h4,h5,h6{ font-size:12px; }
+input[type="button"], input[type="submit"],button{ cursor:pointer; noFocusLine:expression(this.onFocus=this.blur()); outline:none; }
+table {	border-collapse:collapse; border-spacing:0; table-layout:fixed;}
+ul,ol{list-style:none;}
+img { border:none; margin:0; padding:0; }
+a{text-decoration:none; cursor:pointer; noFocusLine:expression(this.onFocus=this.blur()); outline:none; color:#A9B3BB; }
+a:hover{/*text-decoration:underline;*/ }
+
+/*清除浮动*/
+.cf:after,.cf:before {content:""; display:block; height:0px; clear:both; visibility:hidden;}
+.cf{zoom:1}
+.ovh{ overflow:hidden; *zoom:1;}
+.vera{ vertical-align: middle;}
+.veraT{vertical-align: top;}
+
+.fl{ float:left;}
+.fr{ float:right;}
+.tl{ text-align:left;}
+.tc{ text-align:center;}
+.tr{ text-align:right;}
+.por{ position:relative;}
+
+.colorf{ color:#333;}
+.colorbs{color:#fff;}
+.red{ color:#F00;}
+
+/*超出省略隐藏*/
+.t_elli{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;}
+.t_ovh{overflow: hidden;white-space: nowrap;word-wrap: normal;}
+
+body{ background:url(images/bg.jpg) no-repeat fixed center;}
+
+/*marginTop*/
+.mt3{margin-top:3px;}
+.mt5{ margin-top:5px;}
+.mt6{ margin-top:6px;}
+.mt8{ margin-top:8px;}
+.mt10{ margin-top:10px;}
+.mt12{ margin-top:12px;}
+.mt15{ margin-top:15px;}
+.mt18{ margin-top:18px;}
+.mt20{ margin-top:20px;}
+.mt22{ margin-top:22px;}
+.mt24{ margin-top:24px;}
+.mt25{ margin-top:25px;}
+
+/*marginRight*/
+.mr3{margin-right:3px;}
+.mr5{ margin-right:5px;}
+.mr8{ margin-right:8px;}
+.mr10{ margin-right:10px;}
+.mr15{ margin-right:15px;}
+.mr16{ margin-right:16px;}
+.mr20{ margin-right:20px;}
+.mr25{ margin-right:25px;}
+.mr40{ margin-right:40px;}
+.mr80{ margin-right:80px;}
+
+/*marginBottom*/
+.mb2{ margin-bottom:2px;}
+.mb3{ margin-bottom:3px;}
+.mb5{ margin-bottom:5px;}
+.mb6{ margin-bottom:6px;}
+.mb8{ margin-bottom:8px;}
+.mb10{ margin-bottom:10px;}
+.mb15{ margin-bottom:15px;}
+.mb20{ margin-bottom:20px;}
+
+/*marginLeft*/
+.ml3{margin-left:3px;}
+.ml4{margin-left:4px;}
+.ml5{margin-left:5px;}
+.ml6{margin-left:6px;}
+.ml8{margin-left:8px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml30{margin-left:30px;}
+.ml38{margin-left:38px;}
+.ml40{margin-left:40px;}
+
+/*marginLR*/
+.mlr5{margin-left:5px; margin-right:5px;}
+.mlr10{margin-left:10px; margin-right:10px;}
+
+/*marginTB*/
+
+/*paddingTop*/
+.pt10{padding-top:10px;}
+
+/*paddingRight*/
+
+
+/*paddingLeft*/
+.pl30{padding-left:30px;}
+
+.p10{padding:10px;}
+
+.linebso{border-bottom: 1px solid #a5acb1; }
+
+/*header
+.header{width:100%; height:28px; line-height:28px; background:url(images/touming20.png); min-width:1000px;}
+.header .header-right a{ color:#fff;}
+.header .header-right a:hover{color:#aaa8a7;}*/
+
+.footer{ height: 60px; line-height: 60px; text-align: center;}
+
+.content-wrap{min-width:966px;}
+
+/*navigation*/
+.nav-bar{width:100%; min-width:1006px;height:98px; background:url(images/touming10.png);}
+.nav li{width:126px; float:left; position: relative;z-index:1;}
+.nav li a{display:block; width:126px; height:80px; padding-top:18px; text-align:center; font-size:20px; color:#fff;}
+.nav li a em{display:block; width:126px; height:31px;}
+.nav li a em.questionbank{background:url(images/questionbank.png) no-repeat center;}
+.nav li a em.examination{background:url(images/examination.png) no-repeat center;}
+.nav li a em.user{background:url(images/user.png) no-repeat center;}
+.nav li a em.test{background:url(images/test.png) no-repeat center;}
+.nav li a em.marking{background:url(images/marking.png) no-repeat center;}
+.nav li a em.statistics{background:url(images/statistics.png) no-repeat center;}
+.nav li.curr a.e-menu-a,.nav li a:hover,.nav li a.hover{background:url(images/touming20.png);}
+
+/*二级菜单*/
+.e-menu-navbg{background:url(images/bg.jpg) no-repeat -488px top; display:none; position: absolute;left:0;top:98px;}
+.e-menu-navbox{background:url(images/touming30.png);padding:5px;}
+.e-menu-navbox .menu-nava{font-size:18px; padding-top:0; width:110px; padding:0 3px; height: 40px; line-height: 40px;}
+.nav li .e-menu-navbox a:hover,.nav li .e-menu-navbox a.curr{background:url(images/touming30.png);}
+
+/*用户user*/
+.user-box{width:209px; height:98px;}
+.user-box .users{ width:108px; height: 98px; float:left; margin-left:1px; background:url(images/touming20.png); position:relative;}
+.user-box .users .img{ width:108px; text-align:center; margin-top:15px;}
+.user-box .users .img img{ border-radius:50px; margin:0 auto;}
+.user-box .users .name{ font-size:14px; color:#fff; display: block; width:100; height:20px; line-height:20px; margin:2px 4px 0; text-align: center;}
+.user-box .users .name:hover{ text-decoration: underline;}
+.user-box .users .users-infobox{background:url(images/menubg.jpg) no-repeat -100px top; padding:2px; padding-top:0; display:none; position: absolute; top:98px; right:-2px;}
+.users .users-infobox .users-info{background:url(images/touming20.png); padding:5px;}
+.users-infobox .users-info .alink{color:#fff; display:block; font-size:14px; width:92px; text-align:center; padding:0 3px; height: 30px; line-height:30px;}
+.users-infobox .users-info .alink:hover{background:url(images/touming20.png);}
+
+.question-manageAdv{ width:100%; height:130px; background:url(images/advbg.jpg) no-repeat; min-width:927px;}
+.marking-centerAdv{width:100%; height:130px; background:url(images/marking-center.jpg) no-repeat; min-width:927px;}
+.test-centerAdv{width:100%; height:130px; background:url(images/test-center.jpg) no-repeat; min-width:927px;}
+.score-statisticsAdv{width:100%; height:130px; background:url(images/score-statistics.jpg) no-repeat; min-width:927px;}
+.user-manageAdv{width:100%; height:130px; background:url(images/user-manage.jpg) no-repeat; min-width:927px;}
+.paper-manageAdv{width:100%; height:130px; background:url(images/paper-manage.jpg) no-repeat; min-width:927px;}
+
+/*换肤*/
+.user-box .main-skin-box{position:relative; z-index:102; width:100px; height:98px; float:left; font-size:20px; text-align:center; cursor:pointer;}
+.user-box .main-skin-box .line{ display:block; width:100px; height:6px; background:url(images/touming20.png);}
+.user-box .main-skin-box .imgbox{display: block; margin:6px auto 0; width:40px; height:40px; background:url(images/touming30.png);}
+.user-box .main-skin-box .img{display: block; width:40px; height:40px; background:url(images/skin-ico.png) no-repeat center;}
+.main-skin-box .skin-menu{position:absolute; z-index:101; right:0; top:98px; background:url("images/menubg.jpg") -35px -174px; padding:2px;}
+.main-skin-box .skin-menu ul{background:url("images/touming20.png"); padding:8px;}
+.main-skin-box .skin-menu li{height:30px; width:160px; cursor:pointer;}
+.main-skin-box .skin-menu li span{display:block; width:30px; height:30px; float:left;}
+.main-skin-box .skin-menu li span.col1{background:#394163;}
+.main-skin-box .skin-menu li span.col2{background:#3b3b3b;}
+.main-skin-box .skin-menu li span.col3{background:#98CB00;}
+.main-skin-box .skin-menu li span.col4{background:#029D7A;}
+.main-skin-box .skin-menu li span.col5{background:#9933FF;}
+.main-skin-box .skin-menu li span.col6{background:#E5005C;}
+.main-skin-box .skin-menu li span.col7{background:#FFAA11;}
+.main-skin-box .skin-menu li a{display:block; float:left; padding-left:10px; height:30px; line-height:30px; font-size:14px; color:#fff;}
+.main-skin-box .skin-menu li.selected em{display:block; float:right; font-style:normal; width:30px; height:30px; background:url(images/skin-selected.png) no-repeat center;}
+.user-box .main-skin-box.hover{background:url("images/touming20.png");}
+.user-box .main-skin-box.hover .img{background:url(images/skin-ico1.png) no-repeat center;}
+
+/*navigation*/
+.navigation-bar{ background:url(images/touming10.png);}
+.navigation-menu{ overflow:hidden;} 
+.navigation-menu a{ color:#fff; background:url(images/touming10.png);position:relative;display:block;width:auto;height:50px;padding:0px 30px 0px 30px;float: left;font-size:18px;line-height:50px; margin-right:29px;}
+.navigation-menu  a:before {width:25px;height:50px;position: absolute;content: "";top: 0px;left: -25px; background:url(images/default2.png) no-repeat;}
+.navigation-menu a:after {width: 25px;height: 50px; position: absolute;content: "";top: 0px;right: -25px;background:url(images/default1.png) no-repeat;}
+.navigation-menu .active a{background:url(images/activebg.png); color:#afafaf; font-size:16px;}
+.navigation-menu .active a:before{background:url(images/active2.png) no-repeat;}
+.navigation-menu .active a:after {background:url(images/active1.png) no-repeat;}
+.navigation-menu a:hover{text-decoration:underline;}
+.navigation-menu .active a:hover{text-decoration:none;}
+
+/*试题类型*/
+.e-main-con-left,.e-main-con-right,.test-mod-hd .num,.test-mod-hd .tit{ vertical-align: top;}
+.e-test-wrap{background:url(images/touming10.png);}
+.e-btn-box{ height: 35px; overflow:hidden;}
+.btn{ font-family:"微软雅黑"; display:inline-block; vertical-align:middle; padding:0 20px 3px; text-align: center; height:35px; overflow:hidden; background:url(images/btnbg.png) repeat-x; border:0; font-size:16px; color:#fff;}
+.btn.cancel{background:url(images/btnbgwhite.png) repeat-x;}
+a.btn{line-height: 32px;height:32px;}
+/*button hover*/
+.btn:hover,.btnh30:hover{background:url(images/touming30.png);}
+.btnh30{font-family:"微软雅黑"; color:#fff; display:inline-block; height:30px;font-size:14px; padding:0 15px; background:url(images/touming50.png); border:0;}
+.btn.btn-plr15{padding:0 15px 3px;}
+.btn:focus{outline:none;}
+
+.medium-btn{font-family:"微软雅黑"; color:#fff; display:inline-block; height:26px;font-size:14px; padding:0 10px; background:url(images/touming50.png); border:0;}
+.small-btn{border:0; font-family:"微软雅黑"; color:#fff; display:inline-block; height:22px; font-size:14px; padding:0 10px; background:url(images/touming50.png);}
+.small-btn:hover,.medium-btn{background:url(images/touming30.png);}
+
+/*弹出小的下拉窗口*/
+.pop-dropdownmenu-top{ margin-bottom:4px; overflow: hidden; line-height: 20px; border-bottom:1px solid #767676; background:none !important;}
+.pop-dropdown-search label.lab{ display:inline-block; font-size:13px; text-align:right; color:#fff; height:22px; line-height:22px; margin-right: 5px;}
+.pop-dropdown-search dl dd{float: left; line-height: 20px; margin:0 0 5px 0;}
+button.operate-btn{padding:0 5px;}
+.operate-btn{font-family:"微软雅黑"; font-size:12px; color:#fff; display:inline-block; height:24px; line-height:22px; text-align:center; background:url("images/muenhover.png") repeat; padding:0 10px; border:0px;}
+.operate-btn.butt{background:url("images/touming50.png");}
+.operate-btn.butt:hover{ background:url("images/muenhover.png") repeat; transition:all 0.5s ease-in-out 0s;}
+.operate-btn:hover{ background:url("images/touming50.png"); transition:all 0.5s ease-in-out 0s;}
+
+
+.test-mod{ position:relative; background:url(images/touming10.png); border-top:2px solid #766fb5; overflow: hidden;}
+.test-mod .test-mod-hd{background:url(images/touming10.png);}
+.test-mod .test-mod-hd .num{width:55px;}
+.test-mod .test-mod-hd .num span{ display: block; width:55px; margin:6px 0; color:#ccc; text-align: center; font-size:25px;}
+.test-mod .test-mod-hd .font-c{ color:#766fb5;}
+.test-mod .test-mod-hd .tit{padding:15px 0; position:relative;}
+.test-mod .test-mod-hd  .tit p{ font-size:14px; padding-right:10px;}
+.test-mod .test-mod-bd{margin:25px 30px;}
+.e-questionCheckbar .bar{ overflow:hidden; padding:8px 10px;border-radius:5px; cursor:pointer; font-size:14px; line-height: 24px; margin-left:16px;}
+.e-questionCheckbar .bar:hover{ background: url(images/touming20.png);}
+.e-questionCheckbar .bar p{ display: inline; margin-left:10px;}
+
+.bar-L{width:49%; float: left; margin-right:1%;}
+.bar-R{width:49%; float: left; margin-left:1%;}
+
+
+/*试卷试题操作区域*/
+.e-operate-box{margin-left:15px;}
+.e-small-mode{background:url(images/touming10.png);}
+.e-small-mode .e-sm-mode-hd{ height: 50px; background:url(images/touming10.png); line-height:50px; padding:0 12px; font-size:16px; font-weight: normal; position: relative;}
+.e-small-mode .e-sm-mode-hd span{ display: block; width:5px; height: 20px; background: #766fb5; position: absolute; left:0; top:15px;}
+.e-sm-mode-bd{padding:7px 7px; overflow: hidden;}
+.e-sm-mode-bd li{width:77px; height: 77px; margin:5px; float:left;}
+.e-sm-mode-bd li a{display:block; width:77px; height:63px; padding-top:14px;background:url(images/touming10.png);}
+.e-sm-mode-bd li em{display:block; width:77px; height:28px; background:url(images/operate.png) no-repeat;}
+.e-sm-mode-bd li em.radio{background-position: 0 0;}
+.e-sm-mode-bd li em.multiple-choice{background-position: 0 -31px;}
+.e-sm-mode-bd li em.judgment{background-position: 0 -62px;}
+.e-sm-mode-bd li em.sort{background-position: 0 -93px;}
+.e-sm-mode-bd li em.on-line{background-position: 0 -123px;}
+.e-sm-mode-bd li em.fill-blanks{background-position: 0 -153px;}
+.e-sm-mode-bd li em.error-correction{background-position: 0 -181px;}
+.e-sm-mode-bd li em.question-answer{background-position: 0 -212px;}
+.e-sm-mode-bd li em.slider-problem{background-position: 0 -424px;}
+.e-sm-mode-bd li em.drag-drop{background-position: 0 -454px;}
+.e-sm-mode-bd li em.matching-problem{background-position: 0 -489px;}
+.e-sm-mode-bd li em.multi-media{background-position: 0 -529px;}
+
+.e-sm-mode-bd li em.shipping{background-position: 0 -274px;}
+.e-sm-mode-bd li em.test{background-position: 0 -304px;}
+.e-sm-mode-bd li em.test-paper{background-position:-79px -430px;}
+.e-sm-mode-bd li em.examination{background-position: -79px -461px;}
+.e-sm-mode-bd li em.exam-application{background-position: 0 -393px;}
+.e-sm-mode-bd li em.test-paper_release{background-position:-79px -399px;}
+.e-sm-mode-bd li em.user{background-position:-79px  -493px;}
+
+.e-sm-mode-bd li a span{display: block; height: 20px; line-height: 20px; padding:5px 5px 0; width:67px; text-align: center; color:#fff; font-size:12px;}
+
+.e-sm-mode-bd li a.curr,.e-sm-mode-bd li a:hover{background:url(images/touming20.png);}
+
+/*tab change*/
+.e-tabchange-wrap,.e-sm-tabchange-wrap{background:url(images/touming10.png);}
+.e-tabchange-bar,.e-sm-tabchange-bar{height: 50px; background:url(images/touming10.png); line-height:50px;}
+.e-tabchange-bar a{font-size:16px; display:block; height:50px; line-height:50px; padding:0 40px; color:#fff; float: left;}
+.e-tabchange-bar a:hover{background:url(images/touming10.png);}
+.e-tabchange-bar a.curr{background:url(images/touming20.png);}
+.e-tabchange-bar .title{font-size:16px; display:block; height:50px; line-height:50px; padding:0 20px; color:#fff;}
+.e-tabchange-bd{padding:20px;}
+.e-form-mod .e-form-mod-tit{ font-weight:normal; font-size:16px; }
+.e-form-tab .e-form-th{ text-align: left; font-weight:normal; font-size:14px; padding-bottom:12px;}
+.e-form-tab .e-form-td{ padding-bottom:12px; font-size:14px;}
+.e-form-tab .e-form-td .inp{height:22px; padding:2px; font-family:"微软雅黑";}
+.e-form-tab .e-form-th.last,.e-form-tab .e-form-td.last{padding:0;}
+
+.e-sm-tabchange-bar a{ font-weight:normal; color:#fff; font-size:16px; display:block; padding:0 20px; float:left;}
+/*.e-sm-tabchange-bar a.curr{ height:50px; background:url(images/tabcurr80.png) repeat-x center bottom; }
+.e-sm-tabchange-bar a:hover{background:url(images/tabcurr30.png) repeat-x center bottom;}*/
+.e-sm-tabchange-bar a.curr{ height:50px; background:url(images/touming10.png); }
+.e-sm-tabchange-bar a:hover{background:url(images/touming20.png)}
+.e-sm-tabchange-bd{padding:7px 7px; overflow: hidden;}
+
+/*tree*/
+.e-tree-search{ height:30px; background:url(images/touming10.png); margin:5px 5px 10px 5px;}
+.e-tree-search input{ height:26px; background: none; padding:2px 5px; font-family:"微软雅黑"; border:0; width:196px; color:#d4d4d4; font-size:14px;}
+.e-tree-search .search-btn{ display:block; float:right; border:0; width:40px; padding:0; height: 30px; background:url(images/searchbtn.png) no-repeat center;}
+.e-tree-wrap{ margin:0px 5px 10px 5px;}
+.e-tree-con{height: 550px; overflow-y:auto; display: none;}
+.e-tree-con.curr{ display: block;}
+.e-tree-line{ height: 21px;width:251px; background:url(images/tree-line.png) no-repeat;}
+/*tree operate*/
+.e-sm-mode-bd li em.search{background-position: -77px 0;}
+.e-sm-mode-bd li em.new-folder{background-position: -77px -30px;}
+.e-sm-mode-bd li em.new-paper{background-position: -77px -60px;}
+.e-sm-mode-bd li em.del{background-position: -77px -91px;}
+.e-sm-mode-bd li em.copy{background-position: -77px -122px;}
+.e-sm-mode-bd li em.move{background-position: -77px -153px;}
+.e-sm-mode-bd li em.import{background-position: -77px -183px;}
+.e-sm-mode-bd li em.export{background-position: -77px -213px;}
+.e-sm-mode-bd li em.list{background-position: -77px -243px;}
+.e-sm-mode-bd li em.metadata{background-position: -77px -274px;}
+.e-sm-mode-bd li em.preview{background-position: -77px -304px;}
+.e-sm-mode-bd li em.new-testbank{background-position: -77px -334px;}
+
+/*exam head*/
+.e-exam-head{padding:0 32px;background:url(images/touming10.png);}
+.e-exam-head h1{font-size:24px; text-align: center; padding-top:40px; font-weight:normal;}
+.e-exam-head h2{ color:#ccc; font-size:20px; text-align: center; padding-bottom:28px;font-weight:normal;}
+.e-exam-head .info{ font-size:14px; padding:10px 0 15px; overflow: hidden; border-top:1px dashed #000;}
+.e-exam-head .info span.ico{ font-family: "宋体"; font-size:12px; margin-right: 5px;}
+
+.e-exam-head .basic-info{ overflow:hidden; padding-bottom:15px;}
+.e-exam-head .basic-info li{ font-size:16px;}
+.e-exam-head .basic-info li span{font-size:14px;}
+
+.module-progress{background:url(images/touming20.png); overflow:hidden; padding:5px 0 15px 5px;}
+.module-progress a{ color:#fff; font-size:16px; display:block; float:left; padding:0 15px; margin:10px 0px 0px 10px; height:32px; overflow:hidden; line-height:32px;}
+.module-progress a.current,.module-progress a:hover{background:#766fb5;}
+
+.e-questions-head{ overflow:hidden; font-size:16px; padding:15px 20px; background:url(images/touming10.png);}
+
+.e-test-operation{border:1px solid #c4c4c4; border-top:0; height:22px; line-height:22px; padding:1px 0px 3px; width:268px; background:url(images/touming20.png); position: absolute; bottom:-24px; right:0;}
+.e-test-operation a{color:#ccc;}
+.e-test-operation .f-inp{ width:35px; text-align: center; height:16px; line-height:16px; font-family: "微软雅黑"; font-size:12px;}
+.e-test-operation .del{ display:block; height:20px; width:26px; margin-top:2px; background:url(images/test-del.png) no-repeat center;}
+.e-test-operation .up{ display:block; height:15px; margin:5px 0; width:20px; background:url(images/icon_go_up.png) no-repeat;}
+.e-test-operation .down{ display:block; height:15px; margin:5px 0; width:20px; background:url(images/icon_go_down.png) no-repeat;}
+
+.main-tableContainer.cl-margin{ margin:0;}
+
+/*搜索*/
+.e-tabbox{background:url(images/touming10.png); padding:0 15px; overflow-y:auto;}
+.e-search-wrap{ padding:12px 0px 12px 16px; overflow:hidden; background:url(images/touming10.png);}
+.e-search-wrap .e-search-td{ float:left; margin:6px 20px 6px 0;}
+.e-search-wrap .e-search-td .lab{display:inline-block;}
+.e-search-con{ vertical-align:top;}
+.e-search-btn-box{vertical-align:bottom;}
+
+.e-tab-btnbox{background:url(images/touming10.png); text-align:center; padding:15px 0;}
+
+
+/*table 头部信息*/
+.e-table-hd{ height: 40px; line-height: 40px; background:url(images/linebg.png) repeat-x scroll left bottom;}
+.e-table-hd h2{ font-weight:normal; float:left; font-size:16px;}
+.e-table-hd a{ font-size:14px; float: right;}
+
+/*老师阅卷按钮*/
+.teamark{display:block; width:275px; height:50px; line-height:50px; color:#fff; background:url(images/butt15.png) repeat-x; font-size:16px; text-align:center;}
+.teamark:hover{background:url(images/touming30.png);}
+
+/*正确答案*/
+.e-answerb-wrap{background:url(images/touming10.png); overflow:hidden; padding:8px 10px;border-radius:5px; cursor:pointer; font-size:14px; line-height: 24px;}
+.e-answer-bar span{ color:#9e97dd; float:left;}
+.e-answer-bar .spancol{color:#fff;}
+.e-answer-bar p{ margin-left:80px;}
+.e-answer-bar.e-score-bar p{margin-left:38px;}
+.main-tableContainer .e-score,.e-answer-bar .e-score{height:10px; width:30px; padding:5px; color:#999; font-size:12px;}
+
+/*学生试卷*/
+/*标记为不确定*/
+.e-test-mark.e-test-operation{width:105px; padding:0px 10px 2px; height: 22px; line-height: 22px;}
+.e-mark-ico{ display:block; width:27px; height:25px; position:absolute; top:0; left:0; background:url(images/mark-ico.png);}
+
+/*答案按钮*/
+.e-questionToolbar{ overflow:hidden; margin:25px 0px 0px 25px;}
+.e-checkBox{overflow:hidden;}
+.e-checkBox .e-question-option{ display:block; width:48px; height:34px; line-height:34px; padding-left:55px; color:#fff; background:url(images/question-option.png) no-repeat;}
+.e-checkBox .e-question-option:hover{background:url(images/question-option-hover.png) no-repeat;}
+.e-checkBox .e-question-option.curr{background:url(images/question-option-select.png) no-repeat;}
+.confirm-btn{ font-family:"微软雅黑"; display:inline-block; min-width:70px; padding:0 10px 3px; text-align: center; height:34px; overflow:hidden; background:url(images/btnbg.png) repeat-x; border:0; font-size:16px; color:#fff;}
+.e-checkBox.multiple .e-question-option{background:url(images/question-option-multiple.png) no-repeat;}
+.e-checkBox.multiple .e-question-option:hover{background:url(images/option-hover-multiple.png) no-repeat;}
+.e-checkBox.multiple .e-question-option.curr{background:url(images/option-select-multiple.png) no-repeat;}
+
+.e-questionToolbar .inpbox{width:99%; height:40px; line-height:40px; font-family:"微软雅黑"; text-indent:1em;}
+.e-checkBox .lab{ display: block; height: 34px; line-height:34px;}
+.e-answer-bar span.reorder-bar{color:#fff; float:none;}
+
+.e-fillBox{position: relative;}
+.e-fillBox .lab{display: block; height: 40px; line-height:40px; width:28px; text-align:center; background:#fff; position:absolute; top:1px; left:0px; color:#000;}
+.e-fillBox .inpbox{text-indent:2em;}
+.e-questionToolbar .txtarea{width:99%;font-family:"微软雅黑";}
+
+.e-test-paperR{background:url(images/touming10.png);}
+.e-time-wrap{padding:10px; overflow:hidden;}
+.e-time-wrap .txt{float:left; font-size:16px; margin-left:6px; display:block; height:60px; line-height:60px;}
+.e-time-wrap .e-time-con{width:165px;}
+
+.switch-question-box{ background:url(images/touming10.png); padding:12px; border-top:1px solid #C5BCBC; border-bottom:1px solid #C5BCBC;}
+.switch-question-box .bar{ font-size:12px;}
+
+/*答题卡*/
+.answer-card-wrap .answer-card-hd{ height:30px; line-height: 30px; text-align:center;background:url(images/touming20.png);}
+.answer-card-wrap .answer-card-bd{padding:12px; overflow:auto;}
+.answer-card-wrap .Btnbox{padding:0 12px;}
+
+.e-model-item .tit{ border-left:3px solid #766fb5; font-weight:700; line-height: 10px;padding-left:5px; font-size:12px;}
+.e-model-item .tit span{ font-weight:normal;}
+.e-model-item .order{margin-top:15px; overflow:hidden;}
+.e-model-item .order .card{ color:#fff; cursor:pointer; float:left; font-family:"Arial"; font-size:12px; width:33px; height:24px; line-height: 24px; text-align:center; background:url(images/touming20.png); margin:0 2px 2px 0; outline:none;}
+.e-model-item .order .card.checked{background:#766fb5;}
+.e-model-item .order .card:hover{background:url(images/touming30.png);}
+.assignmentBtn{font-family:"微软雅黑"; display:inline-block; width:250px; border-radius:3px; padding:0 10px 3px; text-align: center; height:35px; overflow:hidden; background:url(images/btnbg.png) repeat-x; border:0; font-size:16px; color:#fff;}
+.assignmentBtn:hover{background:url(images/touming30.png);}
+
+/*自己编题*/
+.e-item-mod .e-item-hd{font-size:16px; height:25px; line-height:25px;}
+.texa{width:100%;}
+.e-item-bd .explain{color:#c5c5c5; font-size:14px;}
+.e-option-wrap td{ padding-top:12px;}
+.e-option-wrap .inp{width:100%; height: 30px; border:1px solid #d4d4d4;}
+.e-option-wrap .order{width:20px; font-size:14px;}
+.e-option-wrap .radio{width:20px;}
+.e-option-wrap .operate{width:20px;}
+.e-option-wrap .del{ cursor:pointer; display:block; width:20px; height:30px; background:url(images/del.png) no-repeat 5px center;}
+
+.e-tabform-wrap .lab{ text-align:right; padding-right:5px;}
+
+.e-star-wrap li{ float: left; margin-right:25px;}
+.e-star-wrap .star{ display: inline-block; width:90px; height:15px; background:url(images/star.png) no-repeat;}
+.e-star-wrap .star.one{background-position: 0 0;}
+.e-star-wrap .star.two{background-position: 0 -14px;}
+.e-star-wrap .star.three{background-position: 0 -30px;}
+.e-star-wrap .star.four{background-position: 0 -46px;}
+.e-star-wrap .star.five{background-position: 0 -62px;}
+
+.e-tabform-wrap .inp{width:100%; height: 30px; border:1px solid #d4d4d4;  font-size:14px; font-family:"微软雅黑";}
+.e-tabform-wrap td{padding-bottom:3px;}
+
+.e-test-set th{text-align:left; font-weight:normal; padding-right:10px;}
+.e-test-set td{padding-right:10px; padding-top:8px;}
+.e-test-set .test-name,.e-test-set .test-explain{padding:2px; font-size:14px; font-family:"微软雅黑";}
+.e-test-set .del{ display:block; width:20px; height:22px; background:url(images/del.png) no-repeat 2px 2px;}
+
+/*表头*/
+.main-tableContainer .e-tab-tit{ font-weight:normal; font-size:16px; height:28px; line-height:28px; border-bottom:1px solid #000;}
+.main-tableContainer .e-tab-tit .alink{font-size:14px;}
+.main-tableContainer .e-tab-tit .line{font-size:13px; margin:0 2px;}
+
+/*表格操作按钮*/
+.e-tabbtn-box{padding:10px; overflow:hidden; background:url(images/touming10.png);}
+.tabbtn{height:25px; line-height:25px; font-family:"微软雅黑"; color:#fff; display:inline-block;font-size:14px; padding:0px 10px; background:url(images/touming20.png); border:0;}
+.tabbtn:hover{background:url(images/touming30.png);}
+.e-tabbtn-box .title{line-height:24px;}
+
+/*弹出tab切换按钮*/
+.e-tabbar{ overflow:hidden; background:url(images/touming10.png); padding:0 15px 6px;}
+.e-tabbar .t-btn{ display:block; padding:0 16px; float:left; height:32px; line-height:32px; margin-right:5px; background:url(images/muenhover.png); color:#fff; font-size:14px;}
+.e-tabbar .t-btn.curr{background:url(images/touming20.png);}
+
+/*步骤*/
+.main-tab-step{overflow:hidden;}
+/*DEFAULT STEPS*/
+.main-tab-step a {position:relative;display:block;width:auto;height:24px;margin-right: 18px;padding:0px 10px 0px 3px;float: left;font-size:12px;line-height:24px;color:#fff;background:url(images/touming10.png);text-decoration:none;}
+.main-tab-step a:before {width:13px;height:24px;background:url(images/completed-stepsx.png) no-repeat;position: absolute;content: "";top: 0px;left: -13px;}
+.main-tab-step a:after {width: 13px;height: 24px;background:url(images/completed-step.png) no-repeat; position: absolute;content: "";top: 0px;right: -13px;}
+/*COMPLETED STEPS*/
+.main-tab-step .completed-step a {color:#fff;background:url(images/touming10.png);}
+.main-tab-step .completed-step a:before { background:url(images/completed-stepsx.png) no-repeat;}
+.main-tab-step .completed-step a:after { background:url(images/completed-step.png) no-repeat;}
+.main-tab-step .completed-step span {color: #fff; margin-right:4px; margin-left:4px;}
+/*ACTIVE STEPS*/
+.main-tab-step .active-step a {color:#fff;background:url(images/touming20.png);}
+.main-tab-step .active-step a:before { background:url(images/completed-step20sx.png) no-repeat;}
+.main-tab-step .active-step a:after {background:url(images/completed-step20.png) no-repeat;}
+.main-tab-step .active-step span { color: #fff; margin-right:4px; margin-left:4px;}
+
+.main-tab-step a.big{height:30px; line-height: 30px; margin-right:22px;background:url(images/touming10.png);}
+.main-tab-step a.big:before { width:15px;height:30px;background:url(images/completed-bigstepsx.png) no-repeat;position: absolute;content: "";top: 0px;left: -15px;}
+.main-tab-step a.big:after {width:17px;height:30px;background:url(images/completed-bigstep.png) no-repeat;position: absolute;content: "";top: 0px;right: -17px;}
+.main-tab-step .completed-step a.big{background:url(images/touming10.png);}
+.main-tab-step .completed-step a.big:before { background:url(images/completed-bigstepsx.png) no-repeat;}
+.main-tab-step .completed-step a.big:after {background:url(images/completed-bigstep.png) no-repeat;}
+.main-tab-step .active-step a.big{background:url(images/touming20.png);}
+.main-tab-step .active-step a.big:before{background:url(images/completed-bigstep20sx.png) no-repeat;}
+.main-tab-step .active-step a.big:after {background:url(images/completed-bigstep20.png) no-repeat;}
+
+.e-form-head{height:30px; line-height:30px;}
+
+/*考试中心*/
+.e-examination-wrap{overflow:hidden; background:url(images/touming10.png);padding:0.5% 0.5%;}
+.e-examination-mod{float:left; margin:0.5% 0.5%; padding: 0 1% 1%; width: 30.3%; /*width:381px;*/background:url(images/touming10.png);}
+.e-examination-mod .tit{height:35px; line-height:35px; border-bottom:1px dotted #ccc;}
+.e-examination-mod .e-testinfo{min-height:135px;}
+.e-examination-mod .e-testinfo img{width:40%; height:100%; float:left;}
+.e-examination-mod .e-testinfo .txt{float: left; width:56.4%}
+.e-examination-mod .e-testinfo .txt p{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;}
+
+/*上传*/
+.icon-spirit{background:url(images/icon-spirit.png) no-repeat;}
+.uploading{display:inline-block;width:100px; height:30px; background-position:0 -66px; vertical-align:middle;}
+.uploading:hover{background-position:0 -31px;}
+.uploading-small{display:inline-block;width:50px; height:30px; background-position:0px -244px; vertical-align:middle;}
+.uploading-small:hover{background-position:0 -277px;}
+.uploadingBox{height:30px;}
+.uploadingBox .lab{height:30px; line-height:30px;}
+.test-upload{height:24px; background-position:0 -2px;}
+.test-upload:hover{background-position:0 -36px;}
+/*上传试卷h30*/
+.uploading-testpaper{display:inline-block;width:100px; height:30px; background-position:-112px -4px; vertical-align:middle;}
+.uploading-testpaper:hover{background-position:-112px -49px;}
+/*上传答案h30*/
+.uploading-answer{display:inline-block;width:100px; height:30px; background-position:0 -107px; vertical-align:middle;}
+.uploading-answer:hover{background-position:0 -152px;}
+
+/*----------------*/
+/*编辑答题卡*/
+.ac-option-bar{background:url(images/touming40.png); overflow:hidden; padding:8px;}
+.ac-option .sel{height:25px; margin-top:5px;}
+.ac-option .inp{height:20px; line-height:20px; padding:2px; width:50px; text-align:center;}
+.e-ordinary-tab th{color:#fff; font-weight:normal; text-align:left; padding:5px; background:url("images/touming40.png");}
+.e-ordinary-tab td{color:#fff; background:url("images/touming20.png"); border-top:1px solid #484848; padding:5px 10px;}
+.e-ordinary-tab .inp{width:40px; height:16px; padding:2px; text-align:center;}
+.e-ordinary-tab .alink{margin-right:4px;}
+.e-ordinary-tab .alink:hover{color:#fff;}
+
+.ac-option-tab .e-ordinary-tab th,.ac-option-tab .e-ordinary-tab td{padding:8px;}
+.ac-option-tab .e-ordinary-tab td,.answer-area td{vertical-align:top;}
+.suspension-Btnbox .assignmentBtn{width:320px;}
+.answer-area td{padding:2px 0;}
+.answer-area .tit{ border-left:3px solid #000; line-height: 14px;padding-left:5px; font-size:14px;}
+
+.ac-option-answer .uli{float:left; margin-right:10px;}
+.ac-option-answer .uli input{margin-right:4px;}
+.ac-option-fillblank .uli{float:none; margin-bottom:6px; margin-right:0;}
+.ac-option-answer .uli .fill{height:16px; padding:2px;}
+.ac-option-tab .tarea,.tarea{resize:none; font-family:"微软雅黑";}
+
+.e-model-item .option-con,.option-answer-mod{overflow:hidden;}
+.e-model-item .option-con .num{float:left; margin-right:2px;}
+
+/*添加特权普通tab*/
+.main-ordinary-tab th{color:#fff; text-align:left; padding:4px; background:url("images/touming20.png");}
+.main-ordinary-tab td{color:#fff; background:url("images/touming10.png"); border-top:1px solid #ccc; padding:0px 5px;}
+.main-ordinary-tab td.td_1{border-right:1px solid #ccc;}
+.main-ordinary-tab td .f-left{padding:3px 1px; float:left; width:24%;}
+.main-ordinary-tab td .f-left input{vertical-align:sub;}
+
+/*单题模式*/
+.page-question-btn{padding:0px 10px 10px; overflow:hidden;}
+.page-question-btn .btn{display:block; position:relative; padding:0 0 0 20px; width:102px; height:32px; line-height:32px; }
+.page-question-btn .btn em{ position:absolute; top:7px; left:15px; display:inline-block; width:20px; height:20px;}
+.page-question-btn .btn-prev em{background-position:-66px -177px;}
+.page-question-btn .btn-next em{background-position:-14px -177px;}
+
+.test-icon{background:url(images/test-icon.png) no-repeat;}
+
+.single-test-questions{overflow:hidden;position:relative; height:626px;}
+.single-test-questions .e-test-questions-wrap{ display:none; position:absolute; left:0; z-index:2;}
+.single-test-questions .test-mod{height:614px; overflow-y:auto; }
+.single-test-questions .e-test-questions-wrap.curr{display:block;}
+
+/*单题模式切换类型*/
+.e-main-con-wrap .e-main-con-box{display:none;}
+.e-main-con-wrap .e-main-con-box.curr{display:table;}
+
+/* colockbox */
+.e-time-wrap .start{color:#fff; background:url(images/touming30.png) repeat;display: block;font-size: 16px;height: 30px;line-height: 30px;margin-bottom: 10px;text-align: center;}
+.colockbox{width:210px;height:76px;background:url(images/colockbg.png) no-repeat;}
+.colockbox span{float:left;display:block;width:58px;height:48px;line-height:48px;font-size:26px;text-align:center;color:#ffffff;margin:0 17px 0 0;}
+.colockbox span.second{margin:0;}
+
+/*答题卡标记说明*/
+.answer-card-info{padding:10px 10px 0; overflow:hidden;}
+.answer-card-info li{height:24px; width:85px; float: left;}
+.answer-card-info em{display:block; float:left; width:33px; height:24px;}
+.answer-card-info span{display:block; float:left; margin-left:5px;}
+.answer-card-info .checked{background:#766fb5;}
+.answer-card-info .selected,.e-model-item .card.selected{background:url(images/touming60.png) repeat;}
+.answer-card-info .mark{background:url(images/markico.png) repeat;}
+.answer-card-bd .card{position:relative}
+.answer-card-bd .card .mark{ position:absolute; top:0; left:0; display: block; width:15px; height: 14px; background:url(images/markbj.png) no-repeat;}
+
+/*评阅*/
+.e-answer-box{padding:0 30px 30px;}
+.e-exam-con-wrap{padding:0px 10px 0; background:url(images/touming30.png) repeat;}
+
+/*普通表格*/
+.e-ordinary-table{background:url("images/touming10.png") repeat;}
+.e-ordinary-table tr th{ background:url("images/touming20.png") repeat; color:#fff; padding:4px; text-align:left;}
+.e-ordinary-table tr td{ padding:4px; background:url(images/linebg.png) repeat-x scroll left top;}
+.e-ordinary-table tr:hover{background:url("images/touming20.png") repeat; }
+.e-ordinary-table .liner{border-right:1px solid #ADA6B6;}
+
+/*编辑器*/
+.editor-prompt-container .nicEdit-panelContain{background:#3f3f3f;}
+.editor-prompt-container .qtiBox-prompt{background: #fff; height:80px; color:#333;overflow-y:auto;}
+
+/*个人主页*/
+.mrpercent{margin-right:1.86%;}
+
+.home-spirit{background:url(images/home-spirit.png) no-repeat;}
+
+.e-home--wrap{ margin:0 2.781%;min-width:950px;overflow: hidden;width: 94.436%;}
+.e-home-column{float:left; width:32.093%;}
+.e-home-mode{width:100%;padding-top:6px;overflow:hidden;}
+.e-home-mode-hd{ font-size:16px; height: 60px;line-height: 60px;padding: 0 5.5%;text-align: center;background:url(images/touming30.png) repeat;}
+.e-home-mode-bd{padding:5.742%; overflow:hidden;}
+
+.e-personalData .e-home-mode-hd,.e-exam-reminder .e-home-mode-hd,.already-exam .e-home-mode-hd,.e-statistics .e-home-mode-hd,.e-audit-reminder .e-home-mode-hd,.guess-need .e-home-mode-hd,.read-papers .e-home-mode-hd,.published-papers .e-home-mode-hd{margin-top:-6px;}
+.e-home-mode-bd{background:url(images/touming20.png) repeat;}
+.e-personalData .edit-bar{margin-top:-12px; height:28px; line-height:28px; background:url(images/home-spirit.png) no-repeat center 0; }
+.e-personalData .link{width:128px; margin:0 auto; padding:0 10px;}
+.e-personalData .info{padding:5px 0;}
+.e-personalData .info td,.e-statistics .info td{padding:4px 0;}
+.e-personalData .more{border-top:1px solid #41504d; margin-top:5px; margin-bottom:-8px; padding-top:12px; display:block; text-align: center;}
+
+.e-home-profileimg{ background:url(images/touming20.png) repeat; margin-top: -6px;padding: 60px 5.742%  9%;position: relative;text-align: center;}
+.e-home-profileimg .e-profile-set{background-position: 0 -97px;display: block;height: 24px;position: absolute; right: 14px;top: 14px;width: 24px;}
+.e-home-profileimg .img-box{position:relative; background: url(images/touming20.png) repeat;border-radius: 100px;display: inline-block;padding:5px;}
+.e-home-profileimg .img-box img{border-radius:100px;}
+.e-home-profileimg .img-box .edit-img{display:block; width:13px; height:13px; background-position: 0 -74px; position: absolute; bottom:7px; left:72px;}
+.e-home-profileimg .name{height: 30px; font-size:16px; line-height:30px; margin:20px 0;}
+.e-home-profileimg .line{height:28px; background-position: center -40px; margin-bottom: 4px;}
+
+.e-exam-reminder .e-examination-mod{width:92.5%;margin:0 2.871% 2.871%;}
+.e-exam-reminder .e-home-mode-bd{padding:5.742% 2.871% 2.871%;}
+.e-exam-reminder .e-testinfo .img{background:none;}
+.e-exam-reminder .e-testinfo img{float:left; width:38%; height:100%;}
+
+.paper-exam .e-home-mode-bd {padding:5.742% 2.871% 2.871%;}
+.paper-exam .examlist-box{overflow:hidden;}
+.paper-exam .examlist-box span{display: block; color:#fff;}
+.paper-exam .examlist-box li{width:44%; float: left;margin:0 2.871% 2.871%;}
+.paper-exam .examlist-box img{width:100%; height:100%;}
+
+.e-audit-reminder .e-home-mode-bd{padding:4.5%;}
+.e-audit-reminder .e-sm-mode-bd{padding:0;}
+.e-audit-reminder .e-sm-mode-bd li{margin:7px;}
+
+/*说明*/
+.e-illustrate{color:#ccc; font-size:14px;border: 1px dotted #ccc; padding:5px;}
+
+/*错误页面*/
+.main-error-box{padding:60px 130px 0; height:100%; vertical-align:top; background:url(images/touming10.png) repeat;}
+.main-error-top{width:530px; border-bottom:1px solid #ccc; overflow: hidden;}
+.main-error-box .error-img{ height:105px;width:52px;}
+.main-error-box .error-img.error404{background:url("images/error_1.png") no-repeat center;}
+.main-error-box .error-txt{padding-top:20px;}
+.main-error-top-txt{padding-top:20px;}
+.main-error-top-txt .top{ color:#ccc; text-align: right; font-size:13px; height:20px; line-height:20px; }
+.main-error-top-txt .center{ color:#fff; text-align: right; font-size:27px; height:30px; line-height:30px;}
+.main-error-top-txt .bottom{ color:#ccc; text-align: right; font-size:20px; height:25px; line-height:25px;}
+.main-error-box .error-txt li{background: url("images/dot.png") no-repeat center left; height:25px; line-height: 25px; padding-left:10px; color:#ccc; font-size:13px;}
+.main-error-box .error-txt li a{color:#fff;}
+.main-error-box .error-txt li a:hover{text-decoration: underline;}
+.main-error-box .error-img.error403{background: url("images/error_2.png") no-repeat center;}
+.main-error-box .error-img.error500{background: url("images/error_3.png") no-repeat center;}
+.main-error-box .error-img.error503{background: url("images/error_1.png") no-repeat center;}
+.main-error-box .error-img.error0{background: url("images/error_3.png") no-repeat center;}
+
+/*学生考试 连线题*/
+.test-icon {background: url(images/test-icon.png) no-repeat;}
+.line-qt .add-Answer{margin-bottom: 10px;padding: 4px;background: url(images/touming30.png);color: #fff;border: 1px dashed #707070;border-radius: 3px;cursor: pointer;list-style-type: none;position: relative;}
+.line-qt .add-Answer .icon-add{display: inline-block;width: 16px;height: 16px;font-size: 1.6rem;left: 3px;margin-right: 5px;position: relative;top: 3px;background: url(images/test-icon.png) no-repeat 0px -89px;}
+.line-qt .add-Answer:hover{color:#777;}
+.line-qt .add-Answer:hover .icon-add{background-position: -17px -89px;}
+.line-qt .result-area{margin: 20px auto 0;width: 50%;}
+.line-qt .result-area li {margin-bottom: 20px;position: relative;}
+.line-qt .result-area li:after, .line-qt .result-area li:before {content: " ";display: table;clear: both;}
+.line-qt .result-area li:before {border-top: 1px solid #c4c4c4;height: 1px;left: 10%;position: absolute;top: 50%;width: 80%;z-index: 1;}
+.line-qt .target-box {position: relative;background: url(images/bg.jpg) no-repeat fixed center;position: relative;z-index: 2;border-radius: 2px;}
+.line-qt .result-area li .target {background: url(images/touming30.png) repeat;border: 1px solid #000;border-radius: 2px;height: 36px;line-height: 36px;text-align: center;width: 100px;overflow: hidden;padding: 5px;}
+.line-qt .result-area li.incomplete-pair p {border: 1px dashed #c4c4c4;}
+.line-qt .result-area .incomplete-pair .qtiBox-mini-tlb {background: #000;display: block;position: absolute;right: -35px;top: 11px;}
+.line-qt .qtiBox-mini-tlb .icon-bin {border: none;float: right;padding: 0;display: block;width: 22px;height: 22px;background: url(images/test-icon.png) no-repeat -43px 0px;}
+.line-qt .result-area li.incomplete-pair .filled {border: 1px solid #c4c4c4;}
+.line-qt .result-area .target-box.active .filled {border: 1px solid #000;}
+.line-qt .target-box.active .remove-choice {display: block;width: 20px;height: 20px;position: absolute;bottom: 0;right: 0;background-position: -46px -4px;}
+.line-qt .target-box.active .remove-choice:hover{background-position:-70px -4px;}
+.line-qt .result-area li .filled:hover{background:url(images/touming80.png) repeat;}
+
+.line-qt .qtiBox-item{margin: 3px;padding:8px 10px;border-radius:5px; cursor:pointer; font-size:14px; margin-left:16px;}
+.line-qt .qtiBox-item:hover{background:url(images/touming30.png) repeat;}
+.lineItem-drag{position:relative; z-index:3;}
+
+/*学生考试排序题*/
+.sort-qt .qtiBox-item{margin: 3px;padding:8px 10px;border-radius:5px; cursor:pointer; font-size:14px; margin-left:16px;}
+.sort-qt .qtiBox-item:hover,.sort-qt .qtiBox-item.active{background:url(images/touming30.png) repeat;}
+.sort-qt .sort-questions-area{overflow: hidden;height: 20px;line-height: 20px;background: url(images/touming30.png) repeat;border: 1px dashed #707070;border-radius: 3px;padding: 4px;}
+.sort-qt .sort-questions-area li{float: left;min-width: 40px;cursor: pointer;margin-right: 5px;padding: 0 4px;}
+.sort-qt .sort-questions-area li.active {color: #000;border: 1px dotted #fff;}
+.sort-qt .sort-questions-area li:hover{color: #000;}
+.sort-qt .qtiBox-result-btn {float: right;}
+.sort-qt .qtiBox-result-btn button {display: block;width: 20px;height: 20px;float: left;cursor: pointer;padding: 0;border: 0;}
+.sort-qt .qtiBox-result-btn button.left {background-position: -65px -134px;}
+.sort-qt .qtiBox-result-btn button.left:hover {background-position: -65px -176px;}
+.sort-qt .qtiBox-result-btn button.right {background-position: -10px -134px;}
+.sort-qt .qtiBox-result-btn button.right:hover{background-position:-10px -176px;}
+.sort-qt .horizontal-target li{position:relative;}
+.sort-qt .horizontal-target li.active .remove-choice{display: block;width: 20px;height: 20px;position: absolute;bottom: 0;right: 0;background-position: -43px -1px;}
+.sort-qt .horizontal-target li.active .remove-choice:hover{background-position: -67px -1px;}
+
+/*编辑器图片上传*/
+.upload-imgcon{padding:10px; width:250px; background:#fff; overflow:hidden; color:#333;}
+.upload-imgcon .imghd{border-bottom: 1px solid #a0a0a0;padding-left: 5px;height:25px; margin-bottom:10px;}
+.upload-imgcon .imghd span{border: 1px solid #a0a0a0; display:inline-block; height:25px; line-height: 25px;margin: 0 2px -1px 0;padding: 0 20px; position: relative;text-align: center;background-color: #fff;border-bottom:1px solid #fff;color: #000;cursor: default;}
+.imgtab-row label{color:#333;display: inline-block;vertical-align: middle;}
+.upload-imgcon .button-common{padding: 0 10px;display:inline-block; background:#F0F0EE;height: 23px; border: 0;vertical-align: middle;}
+.upload-imgcon .button-common:hover{background:#f4f4f2;}
+.imgtab-row .input-text{background-color: #ffffff;border-color: #848484 #e0e0e0 #e0e0e0 #848484;border-style: solid;border-width: 1px;display: inline-block;font-size: 12px;height: 17px;line-height: 17px;padding: 2px 4px;vertical-align: middle;}
+.imgtab-row .refresh-btn{display: inline-block; width:16px; height: 16px; vertical-align: middle; background:url(images/edit-refresh.png) no-repeat;}
+.upload-imgcon .inline-block{ display: inline-block;vertical-align: middle;}
+.upload-imgcon .imgfooter{text-align: right;}
+.upload-imgcon .upload-area{ position: relative; display:inline-block;}
+.upload-imgcon .upload-file{border: 0 none; margin: 0;opacity: 0;padding: 0;position: absolute;right: 0;top: 0;width: 280px;height:23px; z-index: 99999;}
+
+.icon-note{display:inline-block; width:22px; height:22px; background-position:-4px -381px; margin-left:4px; text-align:center; color:#fff;}
+
+/*弹出的考试详情*/
+.exam-detail-head.e-exam-head h1{padding-top:5px; font-size:20px;}
+.exam-detail-head.e-exam-head h2{padding-bottom:5px; font-size:16px;}
+.exam-detail-head.e-exam-head .basic-info{padding-bottom:10px;}
+.exam-detail-head.e-exam-head .info{padding:5px 0 0px;} 
+.exam-detail-test.e-tabbox{padding:0;}
+.exam-detail-test .test-mod .test-mod-hd .num span{margin:1px 0;}
+.exam-detail-test .test-mod .test-mod-hd .tit{padding:10px 0;}
+.exam-detail-test .e-questionToolbar{margin:18px 0 0 25px;}
+.exam-detail-test .test-mod .test-mod-bd{margin:18px 30px;}
+.exam-detail-test .e-questionCheckbar .bar{padding:6px 10px;}
+.exam-detail-test .e-questions-head{padding:10px 20px;}
+.exam-detail-test .e-answer-box{padding:0 30px 10px;}
+.exam-detail-test .padding{padding:0 15px 10px;}
+.e-analysis-window .exam-detail-head{padding:0 15px;}
+
+/*统计*/
+.e-statistics-mod,.e-statistics-table{border:1px solid #b8b8b8;}
+.e-statistics-mod .e-statistics-hd{height:35px; line-height:35px; font-size:14px; font-weight:normal; background:url(images/touming30.png); padding:0 10px;}
+.e-statistics-mod .e-statistics-bd{background:url(images/touming10.png); padding:10px;}
+.e-statistics-mod .e-statistics-bd th{text-align:left; padding:8px 0;}
+.e-table-titbar{height:35px; line-height:35px; font-size:14px; font-weight:normal; background:url(images/touming30.png); padding:0 10px;}
+.e-statistics-table .e-table-bd{background:#fff;}
+.e-statistics-table .border,.e-statistics-testtable .e-table-titbar{border:1px solid #b8b8b8;}
+.e-statistics-testtable .e-table-bd{background: #fff; border:2px solid #b8b8b8; border-top:0;}
+.e-statistics-mod .e-statistics-bd.e-statistics-table {padding:0; background:#fff;}
+
+/*树操作说明*/
+.e-tree-illustrate{border:1px dotted #969696;color:#ccc;font-size:12px;padding:4px; margin:6px 5px 10px;}
+
+/*考试  状态不点击*/
+.btn.no-click{background:none; cursor:default; color: #ccc;}
+
+/*添加目录分类*/
+.e-add-catalog{background:url(images/touming10.png);}
+.e-add-catalog .e-catalog-bar{height:30px; line-height:30px; padding:0 5px; background:url(images/touming10.png);}
+.e-add-catalog .e-catalog-tree{padding:5px;}
+.e-add-catalog .e-catalog-bar a{color:#fff;}
+
+/*预览考试单题模式*/
+.e-preview-single .module-progress{padding:0px 8px 8px 0px;}
+.e-preview-single .module-progress a{margin:8px 0px 0px 8px;}
+.e-preview-single .page-question-btn{padding:10px 0px 0;}
+.e-preview-single.single-test-questions .test-mod{height:400px;}
+
+/*搜索限制li的高度*/
+.e-search-wrap .e-search-td{height:24px;}
+
+/*创建试题操作浮动定位*/
+.e-tabbox .e-main-con-right .e-operate-box{position:fixed; right:15px; width:195px;}
+/*组件下拉表格 按钮*/
+.grid-btn-box{ overflow:hidden;padding-bottom:5px;}
+
+/*遮罩层*/
+.e-tabcover .e-search-wrap{padding:8px 12px;}
+.e-tabcover .e-tab-btnbox{position:relative; z-index:2;}
+.e-cover{width:100%; height:100%;background:url(images/toumingb20.png);position:absolute; left:0; z-index:1;}
+
+/*移动到 下拉tree*/
+.e-movetreebox{background:url(images/touming10.png);}
+.e-movetree-btnbox{background:url(images/touming10.png); padding:10px 0; text-align:center;}
+
+

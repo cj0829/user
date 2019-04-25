@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*新加编辑tab页*/
+.pmt-tabbar a{padding:0 40px 0 20px; position: relative;}
+.pmt-tabbar a .title{padding:0;}
+.pmt-tabbar em{position:absolute; top:10px; right:12px; display:block; width:16px; height:16px; background:url(images/home-spirit.png) no-repeat;}
+.pmt-tabbar em.lock{width:4px; height:4px; top:16px; right:12px; background:#fff;}
+.pmt-tabbar em.del{background-position:-30px -136px;}
+.pmt-tabbar em.del:hover{background-position:-54px -136px;}
+.pmt-context .pmt-tabcon-panel{display:none; min-height:400px;}
+.pmt-context .pmt-tabcon-panel.curr{display:block;}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!---->
+<project name="user-web" default="changeSysConfigure" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+	<property name="lib" value="${basedir}/target/user/WEB-INF/lib"></property>
+	<target name="init">
+		<path id="ant.run.lib.path">
+			<pathelement path="target/classes" />
+			<fileset dir="${lib}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+	</target>
+	<target name="validationConfigure"  depends="init">
+		<java classname="org.csr.core.tools.validation.ValidationProperties" fork="yes" failonerror="true">
+			<classpath refid="ant.run.lib.path">
+			</classpath>
+			<sysproperty key="filePath" value="${basedir}\src\main\resources" />
+			<sysproperty key="fileName" value="validation.properties" />
+			<sysproperty key="dataMap" value="{c:'org.csr.core.business.domain',u:'org.csr.common.flow.domain',e:'org.csr.common.user.domain',f:'org.csr.common.flow.domain'}" />
+			<sysproperty key="backFilePath" value="${basedir}\doc" />
+			<sysproperty key="backFileName" value="backValidation.properties" />
+			
+		</java>
+	</target>
+	<!-- 更改数据库类型 -->
+	<target name="changeSysConfigure"  depends="init">
+		<java classname="org.csr.core.tools.ChangeSysConfigure" fork="yes" failonerror="true">
+			<classpath refid="ant.run.lib.path">
+			</classpath>
+			<sysproperty key="filePath" value="${basedir}\src\main\resources" />
+			<sysproperty key="databaseType" value="mysql" />
+			<sysproperty key="hostname" value="127.0.0.1" />
+			<sysproperty key="dbName" value="user" />
+			<sysproperty key="username" value="root" />
+			<sysproperty key="password" value="root" />
+			<!--
+			<sysproperty key="dbName" value="orcl" />
+			<sysproperty key="username" value="testadmin" />
+			<sysproperty key="password" value="testadmin" />-->
+			<sysproperty key="factory_class" value="ehcache" />
+		</java>
+	</target>
+	<target name="setup" depends="init">
+		<java classname="org.csr.core.tools.initdata.Setup" fork="yes" failonerror="true">
+			<classpath refid="ant.run.lib.path"></classpath>
+			<!-- 数据库类型 -->
+			<sysproperty key="database" value="mysql" />
+			<sysproperty key="ip" value="127.0.0.1" />
+			<!-- 如果库已存在，是否删除库 -->
+			<sysproperty key="deleteDb" value="Y" />
+			<!-- 数据库端口 -->
+			<sysproperty key="port" value="3306" />
+			<!-- oracle用system用户 ：mysql：root -->
+			<sysproperty key="dbAdmin" value="root" />
+			<!-- oracle用system  ：mysql：root :密码 -->
+			<sysproperty key="AdminPassword" value="root" />
+			<!-- oracle表示用户名要求大写，mysql为数据库名 -->
+			<sysproperty key="dbName" value="user" />
+			<!-- oracle专用 -->
+			<sysproperty key="password" value="PMT" />
+			<!-- oracle专用，是oracle的SID -->
+			<sysproperty key="linkId" value="orcl" />
+			<!-- oracle专用，数据库文件存放路径,以斜杠结束 -->
+			<sysproperty key="storepath" value="" />
+			<!-- 从工程名开始 -->
+			<sysproperty key="filePath" value="${basedir}\\doc\\" />
+			<sysproperty key="create_table" value="ddl-mysql.sql" />
+		</java>
+	</target>
+	<target name="initData" depends="init">
+		<java classname="org.csr.core.tools.initdata.InitData" fork="yes" failonerror="true">
+			<classpath refid="ant.run.lib.path"></classpath>
+			<sysproperty key="database" value="mysql" />
+			<sysproperty key="url" value="jdbc:mysql://192.168.10.18:3306/whcms?useUnicode=true" />
+			<sysproperty key="userName" value="root" />
+			<sysproperty key="password" value="root" />
+			<!-- mysql编码：characterEncoding=utf-8，oracle给空串即可 -->
+			<sysproperty key="encoding" value="characterEncoding=utf-8" />
+			<sysproperty key="filePath" value="${basedir}\\doc\\" />
+			<sysproperty key="files" value="{基础数据.xlsx:'系统参数,初始数据,系统字典数据',功能点.xlsx:'01基础数据,02系统管理,04运维管理,18个人空间,20内容管理',菜单.xlsx:'菜单'}" />
+		</java>
+	</target>
+</project>

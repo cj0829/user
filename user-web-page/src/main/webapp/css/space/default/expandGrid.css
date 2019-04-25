@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**table***/
+.expand-grid .datagrid-header,.expand-grid .datagrid-td-rownumber{background:#4b57a3;}
+.expand-grid .datagrid-header .datagrid-cell span{color:#fff;}
+.expand-grid .datagrid-header-row,.expand-grid .datagrid-row{height:30px;}
+.expand-grid .datagrid-header td,.expand-grid .datagrid-body td,.expand-grid .datagrid-footer td{border-top:0;border-right:0;border-left:0;}
+.expand-grid .datagrid-header td.datagrid-header-over{background:#00c484;}
+.expand-grid .datagrid-row-over,.datagrid-row-selected{background:#F4F4F4;}
+
+
+
+

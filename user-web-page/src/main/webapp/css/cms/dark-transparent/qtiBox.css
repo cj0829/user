@@ -1,0 +1,343 @@
+@charset "utf-8";
+/* CSS Document */
+.mtbl5{margin:5px 0px 5px 5px;}
+.ovh{overflow:hidden;}
+.testBox-body{padding:15px;}
+.e-update-test .testBox-body{padding:0px 14px 0 0;}
+.e-preview-test .testBox-body{padding:0px;}
+.qtiBox-widget-box {
+	border: 1px solid transparent;
+	position: relative;
+	margin-top:10px;
+	background:url("images/touming30.png") repeat;
+	outline:none; 
+}
+
+.testBox-mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	filter: alpha(opacity = 30);
+	background: #ccc;
+	z-index:1;
+}
+.testBox-mask-msg {
+	background: #ffffff url('../../img/loading.gif') no-repeat scroll 5px center;
+	border-color: #95B8E7;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	padding: 10px 5px 10px 44px;
+	width: auto;
+	height: 16px;
+	border-width: 2px;
+	border-style: solid;
+	color:#000;
+	z-index:2;
+}
+
+.qtiBox-widget-blockInteraction {
+	cursor: default;
+	z-index: 9;
+	border: 1px solid #000;
+	box-shadow: 1px 1px 3px 1px #000;
+}
+
+.qtiBox-header {
+	overflow: hidden;
+	background: #000;
+	color: #fff;
+	box-shadow: 0 0 0 1px #000;
+	cursor: default;
+	width: 100%;
+	background: #000;
+	padding:2px 0;
+}
+
+.qtiBox-header-title {
+	font-size: 14px;
+	line-height: 1.4;
+	float: left;
+	padding: 0 6px;
+}
+
+.qtiBox-header-tool {
+	float: right;
+	font-size: 14px;
+	padding: 0 6px;
+}
+
+.qtiBox-header-tool a{
+	color:#fff;
+}
+.qtiBox-header-tool .selected {
+	font-weight: bold;
+}
+
+.qtiBox-header-tool .link:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.qtiBox-operTool{
+	min-width: 24px;
+    height: 22px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 2px;
+    display: inline-block;
+    float: right;
+}
+
+.qtiBox-tool-collapse {
+	display:block;
+	width: 16px;
+	height: 18px;
+	background: url('images/test-icon.png') no-repeat 0px -21px;
+	margin:0 7px 0 5px;
+	float: left;
+	
+}
+.qtiBox-tool-collapse:hover{
+	background: url('images/test-icon.png') no-repeat -16px -21px;
+}
+.qtiBox-tool-expand{
+	background: url('images/test-icon.png') no-repeat 0px 3px;
+}
+.qtiBox-tool-expand:hover{
+	background: url('images/test-icon.png') no-repeat -16px 3px;
+}
+
+.qtiBox-tool-del{
+	display: inline-block;
+	width: 11px;
+	height: 18px;
+	background: url(images/test-icon.png) no-repeat 0 -47px;
+}
+.qtiBox-tool-del:hover{
+	background: url(images/test-icon.png) no-repeat -16px -47px;
+}
+
+.qtiBox-footer {
+	overflow: hidden;
+}
+
+
+.block-listing{margin:5px 0;}
+.block-listing li{background: transparent none repeat scroll 0 0; border: 1px solid transparent; border-radius: 2px;cursor: pointer;margin:3px; position: relative;}
+/*选项*/
+.qtiBox-item-box{cursor:pointer;position:relative;}
+.qtiBox-item-box .real-label{left: 3px;margin: 0;position: absolute;top: 8px;width: 20px;}
+.qtiBox-item .answer-context{ cursor: pointer; min-height:22px; margin-left: 24px; padding:4px; color:#fff; border: 1px solid transparent;}
+
+.qtiBox-item.edit-active,.qtiBox-line.edit-active{ cursor: default; z-index: 9; border: 1px solid #000; -webkit-box-shadow: 1px 1px 3px 1px #000; box-shadow: 1px 1px 3px 1px #000; }
+
+/**富文本编辑框的工具栏浮动*/
+.nicEdit-panelContain{position: absolute; top:-24px; left:0px;}
+
+.qtiBox-widget-box .icon-font{border:none; float:right; padding:0; display:block;width:22px; height:22px; background:url(images/test-icon.png) no-repeat -43px -24px;}
+.qtiBox-widget-box .icon-bin{border:none; float:right; padding:0; display:block;width:22px; height:22px; background:url(images/test-icon.png) no-repeat -43px 0px;}
+.qtiBox-mini-tlb .icon-font:hover{background:url(images/test-icon.png) no-repeat -67px -24px;}
+.qtiBox-mini-tlb .icon-bin:hover{background:url(images/test-icon.png) no-repeat -67px 0px;}
+.qtiBox-mini-tlb .icon-magicwand{border:none; float:right; padding:0; display:block;width:22px; height:22px;background:url(images/test-icon.png) no-repeat -43px -70px;}
+.qtiBox-mini-tlb .icon-magicwand:hover{background:url(images/test-icon.png) no-repeat -43px -94px;}
+.qtiBox-mini-tlb .remove-choice{border:none; float:right; padding:0; display:block;width:22px; height:22px; background-position: -44px -48px;}
+.qtiBox-mini-tlb .remove-choice:hover{background-position: -72px -69px;}
+
+.qtiBox-item .cke_focus,.qtiBox-line .cke_focus{ border: 1px dotted #9a9a9a;}
+.qtiBox-prompt-container .qtiBox-prompt{background:url("images/touming30.png") repeat scroll 0 0; padding:15px 10px; border:1px solid transparent; color:#fff;}
+.qtiBox-prompt-container .qtiBox-prompt:focus,.qtiBox-item-box .answer-context:focus{outline:none;}
+
+
+/*富文本编辑器*/
+.nicEdit-panelContain{background:#3f3f3f;color:#000; width:100%; box-shadow: 1px 1px 6px 1px #000;}
+.nicEdit-panel{margin:0 2px 2px; overflow:hidden;}
+.nicEdit-item{float:left;margin-top:2px;}
+.nicEdit-buttonContain{width:20px; height:20px; opacity:1;}
+.nicEdit-buttonEnabled{width:20px; height:20px; opacity:0.6;}
+.nicEdit-button-undefined{background:#3f3f3f;}
+.nicEdit-button-hover{background:#000;}
+.nicEdit-button{cursor: pointer;height: 18px;overflow: hidden;width: 18px;}
+
+.nicEdit-selectContain{ width:90px; height:20px; cursor:pointer; overflow:hidden; opacity:1;}
+.nicEdit-select-undefined{background: #fff; border: 1px solid #000; padding-left:3px; overflow:hidden;}
+.nicEdit-selectControl{width:16px; height:18px; overflow:hidden;background:url('images/nicEditIcons.gif') no-repeat;background-position: -450px 0; float:right;}
+.nicEdit-selectTxt{float: left;font-family: sans-serif;font-size: 12px;height: 14px;line-height: 16px;margin-top: 1px;overflow: hidden;text-align: center;width: 66px;}
+
+
+/*编辑试题*/
+.edit-question .add-option,.lineQuestion .edit-answer .add-Answer{display:block;}
+
+.edit-question .add-option,.lineQuestion .edit-answer .add-Answer{ margin-bottom:10px; padding:4px; background:url(images/touming30.png); color:#fff; border: 1px dashed #000; border-radius: 3px;cursor: pointer;list-style-type: none;position: relative;}
+.edit-question .add-option .icon-add,.lineQuestion .edit-answer .add-Answer .icon-add{ display:inline-block; width:16px; height:16px; font-size: 1.6rem;left: 3px;margin-right: 5px;position: relative; top: 3px; background:url(images/test-icon.png) no-repeat 0 -89px;}
+.edit-question .add-option:hover,.lineQuestion .edit-answer .add-Answer:hover{color:#777;}
+.edit-question .add-option:hover .icon-add,.lineQuestion .edit-answer .add-Answer:hover .icon-add{background:url(images/test-icon.png) no-repeat -16px -89px;}
+
+.edit-question.qtiBox-item:hover,.edit-question.qtiBox-line:hover{border:1px solid #000;}
+
+.edit-question .qtiBox-mini-tlb{ position: absolute; top:-1px; right: -23px; padding: 0; background: #000; overflow: hidden;}
+.edit-question .qtiBox-prompt-container .qtiBox-mini-tlb{right:-22px;}
+.edit-question .qtiBox-prompt-container .qtiBox-prompt.cke_focus,.qtiBox-item .cke_focus{ border: 1px dotted #9a9a9a;}
+.edit-sleep .qtiBox-mini-tlb{display:none;}
+.edit-sleep .add-option,.edit-answer .add-option{display:none;}
+.edit-answer.qtiBox-item:hover,.edit-answer.qtiBox-line:hover,.edit-sleep.qtiBox-item:hover,.edit-sleep.qtiBox-line:hover{background:url("images/touming30.png");}
+
+.edit-answer .qtiBox-mini-tlb .icon-bin,.edit-answer .qtiBox-mini-tlb .icon-font{display: none;}
+
+/*排序题*/
+.qtiBox-widget-box .Sort-questions-area{width:100%;display:table;}
+.qtiBox-widget-box .Sort-questions-area .source,.qtiBox-widget-box .Sort-questions-area .target{ width: 43%; display: table-cell;}
+.qtiBox-widget-box.SortQuestion ul.square{list-style-type:square;}
+.qtiBox-widget-box.SortQuestion ul.decimal,.qtiBox-widget-box.sortQuestion ol.decimal{list-style-type:decimal;}
+.qtiBox-widget-box.sortQuestion .answer-context{padding-left:24px;}
+.qtiBox-widget-box.sortQuestion .qtiBox-item .answer-context{margin-left:0;}
+.qtiBox-widget-box.sortQuestion .qtiBox-item-box .dot{display: block; width:5px; height:5px; background: #fff; position: 
+absolute; top:5px; left:4px;}
+
+.qtiBox-widget-box.SortQuestion .qtiBox-item .answer-context{margin-left:0;}
+.qtiBox-widget-box.SortQuestion .choice-area,.qtiBox-widget-box.SortQuestion .result-area{background:url(images/touming20.png); padding:6px 6px 6px 20px;}
+.qtiBox-widget-box.SortQuestion .qtiBox-item .qtiBox-mini-tlb{right:0px;}
+.qtiBox-widget-box.SortQuestion .edit-question .add-option{margin-bottom:5px;}
+
+.qtiBox-arrow-bar{padding:5px; display:table-cell; vertical-align:middle;}
+.qtiBox-arrow-bar .qtiBox-iconBox{margin:3px auto; background:url(images/touming10.png);}
+.qtiBox-arrow-bar .qtiBox-iconBox.active{background:url(images/touming20.png);}
+.qtiBox-arrow-bar .qtiBox-iconBox.active:hover{background:url(images/toumingb20.png);}
+.test-icon{background:url(images/test-icon.png) no-repeat;}
+.qtiBox-iconBox span{display:block;width:50px;height:40px; margin:0 auto;}
+.qtiBox-iconBox .icon-right{background-position:0 -125px;}
+.qtiBox-iconBox .icon-left{background-position:-50px -166px;}
+.qtiBox-iconBox.active:hover .icon-left{background-position:-50px -206px;}
+.qtiBox-iconBox .icon-up{background-position:-0px -250px;}
+.qtiBox-iconBox .icon-down{background-position:-50px -248px;}
+.qtiBox-iconBox.active:hover .icon-up{background-position:0px -330px;}
+.qtiBox-iconBox.active:hover .icon-down{background-position:-50px -330px;}
+
+.qtiBox-arrow-bar .qtiBox-iconBox.inactive{visibility:hidden;}
+.qtiBox-arrow-bar .qtiBox-iconBox.inactive span{visibility:hidden;}
+.qtiBox-arrow-bar.middle .qtiBox-iconBox.inactive{display:none;}
+
+.qtiBox-arrow-bar .qtiBox-iconBox.triggered{background:url(images/toumingb20.png);}
+.qtiBox-iconBox.triggered .icon-right{background-position:0 -206px;}
+.qtiBox-widget-box.SortQuestion .result-area li.active{border:1px solid #000;}
+
+
+.qtiBox-widget-box.SortQuestion .qtiBox-item.edit-sleep:hover{background:none;}
+
+/*排序题横*/
+.qtiBox-widget-box .Sort-questions-area .horizontal-source{background:none;}
+.qtiBox-result-area{overflow:hidden; height:20px;line-height:20px;background:url(images/touming30.png) repeat;border:1px dashed #000;border-radius:3px;padding:4px;margin:0 12px 0 9px;}
+.qtiBox-result-area li,.sort-questions-area li{float:left;min-width:40px;cursor:pointer;margin-right:5px;padding:0 4px;}
+.qtiBox-result-area li.active,.sort-questions-area li.active{color:#777;border:1px dotted #fff;}
+.qtiBox-result-area li:hover,.sort-questions-area li:hover{color:#777;}
+.qtiBox-result-btn{float:right;}
+.qtiBox-result-btn button{display:block;width:20px;height:20px;float:left;cursor:pointer; padding:0; border:0;}
+.qtiBox-result-btn button.left{background-position:-65px -134px;}
+.qtiBox-result-btn button.left:hover{background-position:-65px -176px;}
+.qtiBox-result-btn button.right{background-position:-10px -134px;}
+.qtiBox-result-btn button.right:hover{background-position:-10px -176px;}
+
+.sortQuestion .edit-question .sort-questions-area{display: none;}
+.sort-questions-area{margin-bottom:10px; overflow:hidden; height:20px;line-height:20px;background:url(images/touming30.png) repeat;border:1px dashed #000;border-radius:3px;padding:4px;}
+.sortQuestion .horizontal-target li{position:relative;}
+.sortQuestion .horizontal-target li.active .remove-choice{display: block;width: 20px;height: 20px;position: absolute;bottom: 0;right: 0;background-position: -43px -1px;}
+.sortQuestion .horizontal-target li.active .remove-choice:hover{background-position: -67px -1px;}
+
+/*连线题*/
+.lineQuestion .qtiBox-item .real-label{left:6px;top:6px;}
+.lineQuestion .result-area{margin:20px auto 0;width:50%;}
+.lineQuestion .result-area li{margin-bottom:20px;position:relative;}
+.lineItem-drag{position:relative; z-index:3;}
+.lineQuestion .result-area li:after,.lineQuestion .result-area li:before{content:" ";display: table;clear:both;}
+.lineQuestion .result-area li:before{border-top:1px solid #000;height:1px;left:10%; position: absolute;top: 50%;width:80%;z-index: 1;}
+.lineQuestion .result-area li .target{background:url(images/touming60.png) repeat;border: 1px solid #000;border-radius: 2px;height: 36px; line-height:36px; text-align:center; width: 100px;overflow: hidden;padding: 5px;}
+.lineQuestion .result-area li.incomplete-pair p{border:1px dashed #000;}
+.lineQuestion .target-box{position:relative; background:url(images/bg.jpg) no-repeat fixed center;position: relative;z-index: 2;border-radius: 2px;}
+.lineQuestion .block-listing  li.active{border:1px solid #000;}
+.lineQuestion .edit-question .block-listing li:hover{border:1px solid #000;}
+.lineQuestion .edit-question .result-area{display: none;}
+
+.lineQuestion .result-area li .filled:hover,.lineQuestion .result-area li .empty:hover{background:url(images/touming80.png) repeat;}
+.lineQuestion .result-area li.incomplete-pair p.empty{border:1px dashed #fff;}
+.lineQuestion .result-area li.incomplete-pair .filled{border:1px solid #000;}
+.lineQuestion .edit-answer .result-area .target-box.active .filled{border:1px solid #fff;}
+.lineQuestion .qtiBox-item.empty{border:1px dashed #000;}
+.lineQuestion .edit-answer .target-box.active .remove-choice{display:block;width:20px; height:20px; position:absolute; bottom:0; right:0; background-position:-46px -4px;}
+.lineQuestion .target-box.active .remove-choice:hover{background-position:-70px -4px;}
+.lineQuestion .result-area .incomplete-pair .qtiBox-mini-tlb{background: #000; display: block; position: absolute;right: -35px; top: 11px;}
+.lineQuestion .result-area .incomplete-pair .qtiBox-mini-tlb .icon-bin{display: block;}
+.lineQuestion .edit-question .result-area .qtiBox-mini-tlb{display:none;}
+
+.qtiBox-widget-box.lineQuestion .qtiBox-item-box .dot{display: block; width:5px; height:5px; background: #fff; position: 
+absolute; top:5px; left:4px;}
+.lineQuestion .qtiBox-line .answer-context{ cursor: pointer; min-height:22px; margin-left: 24px; padding:4px; color:#fff; border: 1px solid transparent;}
+.lineQuestion .qtiBox-line .answer-context.cke_focus{border:1px dotted #9a9a9a;}
+.lineQuestion .block-listing .qtiBox-line{position: static;}
+
+.sortQuestion .block-listing .edit-answer.active,.lineQuestion .block-listing .edit-answer.active{background:url(images/touming30.png) repeat;}
+.lineQuestion .edit-question  .add-Answer{display: none;}
+.lineQuestion .edit-answer  .add-Answer{display: block;}
+
+/*填空题*/
+.FillBlanks .fill-bar{display:inline-block; width:100px; border-bottom:1px solid #fff;height:16px; line-height:13px; vertical-align:middle; margin:0 3px; text-align:center;}
+.FillBlanks .result-area{margin:15px 0px 15px 8p;}
+.fill-result-bar{position:relative; margin:10px 5px 10px 4px;}
+.fill-result-bar .lab{display:block;width:20px; position:absolute;left:6px; top:6px;}
+.result-area .inp-box,.fill-result-bar .inp-box{margin-left:24px;}
+.result-area .inp-box .inp,.fill-result-bar .inp-box .inp{min-height:20px; padding:2px; width:99%; font-family:"微软雅黑";}
+.result-area .inp-box .inp[disabled],.fill-result-bar .inp-box .inp[disabled]{cursor:not-allowed;}
+
+.blanksQuestion .edit-answer .qtiBox-mini-tlb{ position: absolute; top:-1px; right: -27px; padding: 0; background: #000; overflow: hidden;}
+.edit-question .qtiBox-mini-tlb .blanks-answer-add,.edit-question .qtiBox-mini-tlb .blanks-answer-del{display: none;}
+.qtiBox-widget-box .blanks-answer-add{border:none; float:right; padding:0; display:block;width:22px; height:22px; background:url(images/test-icon.png) no-repeat -1px -375px;}
+.qtiBox-widget-box .blanks-answer-add:hover{border:none; float:right; padding:0; display:block;width:22px; height:22px; background:url(images/test-icon.png) no-repeat -44px -375px;}
+.qtiBox-widget-box .blanks-answer-del{border:none; float:right; padding:0; display:block;width:22px; height:22px; background:url(images/test-icon.png) no-repeat -22px -375px;}
+.qtiBox-widget-box .blanks-answer-del:hover{border:none; float:right; padding:0; display:block;width:22px; height:22px; background:url(images/test-icon.png) no-repeat -65px -375px;}
+
+.blanksQuestion_placeholder_inp{background:url(images/test-icon.png) no-repeat -8px -422px; padding:0; border:0; width:50px; margin-right:5px;}
+
+/*匹配题*/
+.MatchQuestion table.matrix{ width:100%;margin-bottom: 10px;border:6px solid transparent;}
+.match-interaction-area{padding:6px;}
+.match-interaction-area table.matrix th{border:1px solid #949494; position:relative; font-weight: normal;  text-align:left; vertical-align:middle; background:url(images/touming30.png) repeat;}
+.MatchQuestion .qtiBox-item .answer-context{padding:0;margin:0;min-height:20px;}
+.MatchQuestion .qtiBox-item.edit-active{box-shadow:0px 0px 0px 0px #000; border:1px solid #000;}
+.MatchQuestion .qtiBox-item.edit-active .answer-context{ box-shadow:1px 1px 3px 1px #000;}
+
+.MatchQuestion table.matrix thead .qtiBox-item .qtiBox-mini-tlb{top:-23px; right:0;}
+.MatchQuestion table.matrix tbody .qtiBox-item .qtiBox-mini-tlb{left:-23px; top:0; right:auto;}
+
+.MatchQuestion .edit-question .qtiBox-item .answer-context:hover{border:1px solid #000;}
+.MatchQuestion .edit-question .qtiBox-item.edit-active .answer-context:hover{border:1px dotted #9a9a9a;}
+
+.match-interaction-area table.matrix td{padding:2px;border:1px solid #949494;background:url(images/touming10.png) repeat;}
+.match-interaction-area table.matrix td .icon-checkbox{padding:0 3px; display:inline-block;}
+
+/*改错题*/
+.ErrorCorrection .inline-text-wrapper,.qtiBox-errortext{position:relative;}
+.ErrorCorrection .inline-text-wrapper .qtiBox-mini-tlb{right:-23px;}
+
+.qtiBox-errortext{position:relative; background:url(images/toumingb20.png) repeat; padding:1px; border:1px solid transparent;}
+.qtiBox-errortext:hover{background:url(images/touming10.png) repeat; }
+.qtiBox-errortext .errortext-checkmark{width:16px; display:block; position: absolute; top:4px; left:4px;}
+.qtiBox-errortext .errortext-content{margin-left:20px;}
+.edit-question.qtiBox-errortext:hover{border:1px solid #000; }
+
+.correctionsQuestion_placeholder_inp{background:url(images/toumingb20.png) repeat; border:0; color:#fff; padding:2px;}
+.correctionsQuestion_placeholder_inp:hover{background:url(images/touming20.png) repeat;}
+.correctionsQuestion .fill-result-bar .inp-box{margin-left:5px; display:inline; }
+.correctionsQuestion .fill-result-bar .inp-box .inp{width:70%;}
+
+/*问答题*/
+.interlocutionQuestion .result-area{padding:10px;}
+.interlocutionQuestion .result-area .tarea{width:100%; height:150px; resize:none; font-family:"微软雅黑";}
+.interlocutionQuestion .result-area .tarea[disabled]{cursor:not-allowed;}
+/*.shortQuestion .edit-question .qtiBox-mini-tlb{display:none;}*/
+.shortQuestion .edit-question .qtiBox-mini-tlb .icon-font{display:none;}
+.shortQuestion .edit-answer .qtiBox-mini-tlb{ position: absolute; top:-1px; right: -24px; padding: 0; background: #000; overflow: hidden;}
+.shortQuestion .edit-answer .qtiBox-item-box .cke_focus{ border: 1px dotted #9a9a9a;}
+.shortQuestion .qtiBox-short.edit-active{ cursor: default; z-index: 9; border: 1px solid #000; -webkit-box-shadow: 1px 1px 3px 1px #000; box-shadow: 1px 1px 3px 1px #000; }
+.shortQuestion .edit-question .answer-context{cursor:not-allowed;}

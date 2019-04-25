@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.pop-dropdownmenu-con .textbox,.main-expand-form .textbox,.main-dropdown-pop .textbox,.main-dropdown-pop .textbox .textbox-text{border-radius:0;}
+.main-expand-form .textbox .textbox-text,.drop-down-tree .textbox{border-radius:0;}
+.main-table-operate .combobox-item{line-height: 20px;}
+.main-expand-form .easyui-searchbox{border-radius:0; border:1px solid #eaf2ff;}
+.easyui-validatebox.validatebox-invalid{ border-style:solid; border-width:1px;}
+
+.e-exam-textbox{font-family:"微软雅黑"; border:none; }
+.e-exam-head h1 .e-exam-textbox{text-align:center;font-size:20px;}
+.e-exam-head h2 .e-exam-textbox{color:#999; text-align:center; font-size:18px;}
+.e-exam-head .basic-info li .e-exam-textbox{font-size:14px;}
+
+.e-search-wrap .textbox,.e-form-mod .textbox,.e-form-mod .textbox .textbox-text{border-radius:0;}
+.expand-dropdown-select .combo-p{border:1px solid #ccc !important; border-top:0;}
+.combobox-item-selected{background-color:#fed3e0 !important;}

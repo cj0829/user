@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*tabs change*/
+.expand-tabs .tabs{height:35px !important;border-bottom: 2px solid #e9eef2; line-height:35px; padding-left:0;}
+.tabs-header,.tabs-tool{background:none;}
+.tabs li a.tabs-inner{border:0;}
+.tabs li.tabs-selected a.tabs-inner{border:0;}
+.expand-tabs .tabs a.tabs-inner{height:35px !important; line-height:35px;}
+.expand-tabs .tabs li a.tabs-inner{background:none; padding:0 20px 0 20px; border-bottom:2px solid transparent;}
+.expand-tabs .tabs-title{ font-size:14px; font-weight:bold; color:#61768b;}
+.expand-tabs .tabs-icon{background:url(images/home-spirit.png) no-repeat -25px -103px; right:0 !important; left:auto;}
+.expand-tabs .tabs li{margin:0;}
+.expand-tabs .tabs-closable{padding-right:16px;}
+.expand-tabs .tabs li a.tabs-close{right:16px;}
+.expand-tabs .tabs li.tabs-selected a.tabs-inner{border-bottom:2px solid #24C0FA; color:#24C0FA;}
+.expand-tabs .tabs li a.tabs-close{opacity:1; background:url(images/home-spirit.png) no-repeat -30px -170px; height:12px;}
+.expand-tabs .tabs li.tabs-selected a.tabs-close{background-position:-48px -170px;}
+.expand-tabs .tabs li.tabs-selected .tabs-title,.expand-tabs .tabs li:hover a.tabs-inner .tabs-title{color:#24C0FA;}
+.expand-tabs .tabs li:hover a.tabs-inner{border-bottom:2px solid #24C0FA; color:#24C0FA;}
+.expand-tabs .tabs li:hover a.tabs-close{background-position:-48px -170px;}
+.expand-tabs .tabs li a.tabs-close:hover{background-position:-30px -170px;}
+
+.expand-wintabs .tabs{border:0; padding-left:15px;}
+.expand-wintabs .tabs li{margin-right:5px;}
+.expand-wintabs .tabs li a.tabs-inner{background:#f3f3f3; border-radius:0;}
+.expand-wintabs .tabs li.tabs-selected a.tabs-inner{background:#4b57a3;color:#fff;}

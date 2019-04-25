@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*上传图片*/
+span.upload{ border:1px solid #C3DDE7; margin:1px; padding:5px 8px;line-height:25px; text-align:center; background:url(images/upload.png) repeat-x; cursor:pointer; font-size:12px; font-family:"微软雅黑"; color:#333;}
+span.upload.hover{ background:url(images/uploadH.png) repeat-x;}
+
+a.uploadimg{ display:block; width:34px; height:30px; background:url(images/uploadimg.png) no-repeat;}
+a.uploadimg:hover{background:url(images/uploadimgH.png) no-repeat;}

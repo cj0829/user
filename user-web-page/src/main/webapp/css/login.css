@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,tr,th,td{margin:0; padding:0; font-size:inherit; word-wrap:break-word; word-break:break-all;}
+i,em { padding:0; margin:0; font-style:normal; word-wrap:break-word; word-break:break-all;}
+
+body{ font:normal 13px/1.5 "microsoft yahei","simsun",arial; color:#fff; }
+h1,h2,h3,h4,h5,h6{ font-size:13px; }
+input[type="button"], input[type="submit"],button{ cursor:pointer; noFocusLine:expression(this.onFocus=this.blur()); outline:none; }
+table {	border-collapse:collapse; border-spacing:0; table-layout:fixed;}
+ul,ol{list-style:none;}
+img { border:none; margin:0; padding:0; }
+a{text-decoration:none; cursor:pointer; noFocusLine:expression(this.onFocus=this.blur()); outline:none; color:#A9B3BB; }
+a:hover{/*text-decoration:underline;*/}
+
+body{ background:url(img/bg.jpg) no-repeat no-repeat fixed center;}
+
+.mb15{margin-bottom:15px;}
+.mt10{margin-top:10px;}
+
+/*login*/
+.mian-login-container{ width:980px; margin:0 auto;}
+.mian-login-container .mian-login-top{ margin-bottom:20px;}
+.mian-login-top img{ width:980px; height:275px;}
+.mian-login-bottom{ overflow:hidden; margin-bottom:5px;}
+.mian-login-bottom .left{ width:418px; background:url(img/touming20.png); padding:23px 24px; float:left;}
+.mian-login-textfield{background:url(img/touming30.png); height:50px;}
+.mian-login-textfield .inp{ background:none; border:none; height:50px; line-height:50px; padding-left:10px; float:left; color:#fff; font-family:"微软雅黑"; font-size:16px;}
+.mian-login-textfield em{ display:block; float:left; width:46px; height:50px;}
+.mian-login-textfield .use{ background:url(img/loginuse.png) no-repeat;}
+.mian-login-textfield .pw{ background:url(img/loginpw.png) no-repeat;}
+
+.mian-login-btnbox{ overflow:hidden; margin-top:20px;}
+.mian-login-btnbox .f-pw{ display:inline-block; float:left; height:50px; line-height:20px; font-size:14px; color:#fff;}
+.mian-login-btnbox .f-pw a{color:#fff;}
+.mian-login-btnbox .f-pw a:hover{ text-decoration:underline;}
+.mian-login-btnbox .f-pw .messagebox{height:33px; line-height:33px; color:red;}
+.mian-login-btnbox .login-btn{border:0; background:url(img/toumingb20.png);display:inline-block; float:right; height:50px; line-height:50px; padding:0 30px; color:#fff; font-family:"黑体 "; font-size:18px;}
+
+.mian-login-bottom .right{ margin-left:20px; height:185px; width:446px; float:right; background:url(img/touming20.png); padding:23px 24px;}
+
+.mian-login-mod .hd{ font-size:16px; color:#fff; font-weight:normal; margin-bottom:4px;}
+.mian-login-mod h1.hd{font-size:25px;}
+.mian-login-mod .bd a{ color:#fff; font-size:14px; text-decoration:underline;}
+.mian-login-mod .bd p{ color:#fff; line-height:25px; font-size:14px;}
+
+.waitingbar-content{color:#000;}
+/*忘记密码*/
+.passwordContainer{background:url(img/bg.jpg) no-repeat fixed center;}
+.passwordContainer .header{height:80px; line-height:80px; background:url("img/touming20.png"); min-width:940px;}
+.passwordContainer .header .login{float:right; margin-right:50px;}
+.passwordContainer .header .login span{margin-right:5px;float:left;display:block; width:20px; height:80px; background:url(img/log.png) no-repeat center;}
+.passwordContainer .header .login a{float:left; color:#fff; font-size:15px;}
+
+.passwordcon{min-width:940px; margin:0 auto 20px;}
+.passwordcon .p-main{width:670px; margin:0 auto;}
+.passwordcon .p-main .h_0{font-size:22px; margin-top:26px; color:#fff;}
+.passwordcon .p-main .info{background:url("img/touming20.png");padding:30px 145px;}
+
+.passwordcon .p-main .textfield{background:url(img/touming30.png); height:50px;}
+.passwordcon .p-main .textfield .inp{ background:none; border:none; height:50px; line-height:50px; float:left; color:#fff; font-family:"微软雅黑"; font-size:16px;}
+.passwordcon .p-main .textfield span{ display:block; float:left; width:46px; height:50px;}
+.passwordcon .p-main .textfield .use{ background:url(img/loginuse.png) no-repeat;}
+.passwordcon .p-main .textfield .question{ background:url(img/question.png) no-repeat;}
+.passwordcon .p-main .textfield .answer{ background:url(img/answer.png) no-repeat;}
+.passwordcon .p-main .textfield .pw{ background:url(img/loginpw.png) no-repeat;}
+
+.passwordcon .p-main .tjbtnbox{ overflow:hidden; margin-top:20px;}
+.passwordcon .p-main .tjbtnbox .login-btn{border:0; background:url(img/toumingb20.png);display:inline-block; float:left; height:50px; line-height:50px; padding:0 30px; color:#fff; font-family:"黑体 "; font-size:18px;}
+
+/*版权*/
+.footer{ padding:10px 0;}
+.footer p{ text-align:center; line-height:20px; color:#fff;}
+.footer .ch-en a{ margin:0 10px; color:#fff;}
+.footer .ch-en a:hover{ text-decoration:underline;}
+
+.placeholder-span{line-height:50px;height:50px; position: absolute; left:46px; top:0; padding-left:10px; color:#aaa; font-size:16px; font-family:"微软雅黑";}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{font-size:12px; margin:0; padding:0;}
+ul,li{ margin:0; padding:0; list-style:none;}
+.panel-tit .panel-title{ padding:0 2px;}
+.menunav-ul{ padding:5px 0; margin:0 5px;}
+.menunav-li{padding:4px 18px; height:18px; line-height:18px;}
+.menunav-li-hover{background:#e6e6e6; color: #000000;}
+.menunav-li-selected{ background:#cce6ff;}
+.menunav-li a{ color:#000; padding:0 2px;}
+.menunav-ico{display: inline-block;height: 18px;overflow: hidden;vertical-align: middle;width: 16px;}

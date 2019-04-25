@@ -1,0 +1,64 @@
+.form-tab-wrap .panel-body{background-color: #fff;}
+.form-tab-wrap .datagrid-body td,.form-tab-wrap .datagrid-footer td{border-color:#f0f2f5; color: #333; border-style:solid; border-width:0 0 1px 0;}
+.form-tab-wrap .datagrid-header td{border-width:0; color: #fff;}
+.form-tab-wrap .datagrid-header,.form-tab-wrap .datagrid-td-rownumber{background:#fc7fa3;filter:none;}
+.form-tab-wrap .datagrid-header,.form-tab-wrap .datagrid-toolbar,.form-tab-wrap .datagrid-pager,.form-tab-wrap .datagrid-footer-inner{border-color:#e35368;}
+.form-tab-wrap .datagrid-header td.datagrid-header-over{background:#FC90AF;}
+.form-tab-wrap .datagrid-row-over{background:#f2f5f8;}
+.form-tab-wrap .datagrid-row-selected{background:#f2f5f8;}
+
+.form-tab-wrap .datagrid-pager{background:#f2f5f8; border:0;}
+.form-tab-wrap .datagrid-pager .l-btn { outline:none; color: #fff;background:url("images/touming20.png");background-repeat: repeat;filter: none;-moz-border-radius: 0px 0px 0px 0px;-webkit-border-radius: 0px 0px 0px 0px;border-radius: 0px 0px 0px 0px;margin:0 2px;}
+.form-tab-wrap .datagrid-pager  .l-btn-selected,.form-tab-wrap .datagrid-pager  .l-btn-selected:hover {background:#fc7fa3;filter: none;color:#fff;}
+
+/*.pop-dropdownmenu-con .panel-body{ background: none; width:400px !important;}*/
+.pop-dropdownmenu-con .datagrid-toolbar,.pop-dropdownmenu-con .datagrid .panel-body{background: none;}
+.pop-dropdownmenu-con.bgcolor .datagrid .panel-body{background:url("images/touming10.png") repeat;}
+
+.pop-dropdownmenu-con .datagrid-header,.pop-dropdownmenu-con .datagrid-td-rownumber{background:#fc7fa3;filter:none;}
+.pop-dropdownmenu-con .datagrid-header td,.pop-dropdownmenu-con .datagrid-body td,.pop-dropdownmenu-con .datagrid-footer td{border-color:#f0f2f5; color: #333; border-style:solid; border-width:0 0 1px 0;}
+.pop-dropdownmenu-con .datagrid-header td{color:#fff;}
+.pop-dropdownmenu-con .datagrid-body td{font-size:12px;}
+.pop-dropdownmenu-con .datagrid-header td.datagrid-header-over{background:#FC90AF;}
+.pop-dropdownmenu-con .datagrid-row-over{background:#f2f5f8;}
+.pop-dropdownmenu-con .datagrid-body,.mian-role-pop .datagrid-body{background:#fff;}
+.pop-dropdownmenu-con .datagrid-header,.pop-dropdownmenu-con .datagrid-pager,.pop-dropdownmenu-con .datagrid-footer-inner{border-color:#e35368;}
+.pop-dropdownmenu-con .datagrid-toolbar{border-color:#ccc;}
+
+.pop-dropdownmenu-con .datagrid-row-selected{ background:#f2f5f8;}
+.pop-dropdownmenu-con .datagrid-pager{ border-top:1px solid #f0f2f5;}
+
+.pop-dropdownmenu-con-float .datagrid-wrap{padding:10px;}
+.pop-dropdownmenu-con-float .panel{background:#fc7fa3; padding:2px;}
+.pop-dropdownmenu-con-float.pop-dropdownmenu-con .panel-body{ background:#fff; color:#333;}
+
+
+/*.pop-dropdownmenu-con .datagrid-view{width:400px !important; height: 114px !important;}*/
+
+
+.pagination-info{color: #999;}
+.pop-dropdownmenu-con .datagrid-pager .l-btn{background:url("images/touming20.png"); border-radius:0; color:#fff; filter:none; margin:0 2px 0 5px;}
+
+.mian-role-pop.pop-dropdownmenu-con{background:none;}
+.mian-role-pop .butcombo-p .panel{ padding:10px; background:url("images/touming20.png");}
+.mian-role-pop .panel-body{background:url(images(images/ no-repeat no-repeat fixed center; padding:4px;}
+/* .mian-role-pop.pop-dropdownmenu-con .datagrid-view{height: 92px !important;} */
+/* .pop-dropdownmenu-con .datagrid-body{ height:90px !important;} */
+.main-tabwrap-box .form-tab-wrap .panel-body{background:none;;}
+
+/* .main-formtab .pagination-info{ color:#000;} */
+
+.main-course-tab .form-tab-wrap .datagrid-body td,.main-course-tab .form-tab-wrap .datagrid-footer td{border-width:0 1px 1px 0;border-style:dotted;}
+
+
+.pop-dropdownmenu-con .datagrid .panel-body.combo-panel{background: #fff; padding:0;}
+.pop-dropdownmenu-con-float .panel-body .combobox-item{color:#000;}
+
+.sessintemp .panel{padding:4px; background:url(images/bg.jpg)(images/at no-repeat fixed center;}
+.sessintemp .panel-body{padding:10px; background:url(images/touming(images/}
+
+.pop-dropdownmenu-nopadding.pop-dropdownmenu-con-float .panel{padding:0;} 
+
+/*a名称内容详情弹框*/
+.main-alinkwin .panel-body{background:url(images/bg.jpg) no-(images/o-repeat fixed center; border:1px solid #ccc;}
+

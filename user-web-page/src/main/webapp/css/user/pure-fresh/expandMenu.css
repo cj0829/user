@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.m-expand-menu.menu{background:url(images/bg.jpg) no-repeat right center; border:0; color:#fff;}
+.m-expand-menu .menu-line{width:1px; background:url(images/touming30.png); border:0;}
+.m-expand-menu .menu-sep{ height:1px;background:url(images/touming30.png); border:0;}
+.m-expand-menu .menu-active{background:url(images/touming30.png);border-color:#0a0807; border-radius:0; color:#fff;}
+.m-expand-menu .menu-icon{background:url(images/menu-icons.png) no-repeat;}
+.m-expand-menu .icon-add{background-position: 0 0px;}
+.m-expand-menu .icon-add-test{background-position: 0 -20px;}
+.m-expand-menu .icon-edit{background-position: 0 -40px;}
+.m-expand-menu .icon-cut{background-position: 0 -58px;}
+.m-expand-menu .icon-copy{background-position: 0 -76px;}
+.m-expand-menu .icon-import{background-position: 0 -93px;}
+.m-expand-menu .icon-export{background-position: 0 -110px;}
+.m-expand-menu .icon-remove{background-position: 0 -126px;}
+.m-expand-menu .icon-process{background-position: 0 -144px;}

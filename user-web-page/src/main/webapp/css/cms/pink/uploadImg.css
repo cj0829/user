@@ -1,0 +1,109 @@
+/*插入图片*/
+.e-tabhead{overflow:hidden;background:#fff;padding:0 15px;}
+.e-tabhead .e-tabhdL{float:left;}
+.e-tabhead .e-tabhdL .tab{cursor:pointer; background:#F2F3FA;color: #333;display: block;float: left;font-size: 14px;height: 32px;line-height: 32px;margin-right: 5px;padding: 0 16px;}
+.e-tabhead .e-tabhdL .tab.curr{background:#fc7fa3; cursor:default; color:#fff;}
+.img-alignBar{float:right; margin-top:5px; position:relative;}
+.img-alignBar .algnLabel{float: left;height: 20px;line-height: 20px;}
+.img-alignBar .alignIcon{display: inline-block;position: relative;}
+.img-alignBar .alignIcon span{background: url(images/edui.png) no-repeat; cursor: pointer; display: block; float: left; height: 17px; margin-left: 3px; margin-right: 3px; width: 19px}
+.img-alignBar .alignIcon .none-align{background-position:0 -18px;}
+.img-alignBar .alignIcon .left-align{background-position:-20px -18px;}
+.img-alignBar .alignIcon .right-align{background-position:-40px -18px;}
+.img-alignBar .alignIcon .center-align{background-position:-60px -18px;}
+.img-alignBar .alignIcon .none-align.curr{background-position:0 0;}
+.img-alignBar .alignIcon .left-align.curr{background-position:-20px 0;}
+.img-alignBar .alignIcon .right-align.curr{background-position:-40px 0;}
+.img-alignBar .alignIcon .center-align.curr{background-position:-60px 0;}
+.e-tabbody{ clear: both; }
+.e-tabbody .panel{display: none;}
+.e-tabbody .panel.curr{display: block;}
+.e-tabbody .panel .top { margin-top: 25px;width: 100%;}
+.e-tabbody .panel .row { clear: both; height: 40px;}
+.e-tabbody .panel .row em{font-style:normal;}
+.e-tabbody .row label {display: inline-block; text-align: center; width: 50px;}
+.e-tabbody .panel input.text{padding: 0px 2px;margin-bottom: 2px;}
+.e-tabbody .panel .preview {background:url(images/muenhover.png) repeat;clear: both;height: 140px; margin-top: 5px;overflow: hidden; width: 160px;z-index: 9999; float: right;}
+.lockicon{background:url(images/lock.png) no-repeat -13px -13px;display: inline-block; height: 20px;vertical-align: middle;width: 20px;}
+
+.queueList .statusBar{border-bottom:1px solid #3d3d3d; height:40px; line-height:40px; position:relative;}
+.queueList .statusBar .info{display:inline-block;}
+.queueList .statusBar .btns{position: absolute; right:0px; top:7px;}
+.queueList .tabbtn.other{background:#E3E3E3; color:#333;}
+.queueList .tabbtn.other:hover{background:#fc7fa3; color:#fff;}
+
+.queueList .filelist{overflow:hidden;}
+.queueList .filelist li{position:relative; float: left;margin: 9px 9px 0 0;overflow: hidden; text-align: center; background:url(images/touming30.png);}
+.queueList .filelist .filePickerBlock{width:100px; height:100px; background:url(images/edui.png) no-repeat 0 -80px;}
+.filelist li .imgWrap{width:100px; height:100px; vertical-align:middle; line-height:100px;}
+.filelist li p.title{color:#fff; top:5px; left:0; overflow:hidden; position:absolute; text-align:left; text-indent:5px; text-overflow:ellipsis; white-space:nowrap; width:100%; z-index:3;}
+.queueList .filelist .error{background:#f43838;color: #fff; position: absolute; bottom: 0; left: 0; height: 28px; line-height: 28px;width: 100%; z-index: 100; font-size:12px;}
+.filelist li img{width:100%;}
+.filelist li .file-panel{height:0px; transition:1s; opacity:0; background:url(images/touming30.png) repeat;left: 0;overflow: hidden;position: absolute;top: 0;width: 100%;z-index: 300;}
+.filelist .file-panel span { background: url(images/edui.png) no-repeat; cursor: pointer; display: inline; float: right;height: 24px; margin: 5px 1px 1px; overflow: hidden; text-indent: -9999px; width: 24px;}
+.filelist .file-panel .cancel{background-position:-175px -28px;}
+.filelist .file-panel .cancel:hover{background-position:-175px -4px;}
+.filelist .file-panel .rotateRight{background-position:-150px -28px;}
+.filelist .file-panel .rotateRight:hover{background-position:-150px -4px;}
+.filelist .file-panel .rotateLeft{background-position:-122px -28px;}
+.filelist .file-panel .rotateLeft:hover{background-position:-122px -4px;}
+.filelist li:hover .file-panel{height:30px; transition:1s; opacity:1;}
+.filelist li .success{background:url(images/edui.png) no-repeat 0px -255px; bottom: 0;display: block;height: 32px;left: 0;position: absolute;width: 100%;z-index: 200;}
+.filelist li p.progress {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border-radius: 0; bottom: 0; height: 8px; left: 0;margin: 0;overflow: hidden; position: absolute;width: 100%;z-index: 50;}
+/*.filelist li p.progress span{animation:2s linear 0s normal none infinite running progressmove;background: #1483d8 url(images/progress.png) repeat-x scroll 0 0;display: none;height: 100%;overflow: hidden;transition: width 200ms linear 0s;width: 0;}*/
+.filelist li p.progress span{background:url(images/progress.gif) repeat-x scroll -9px -4px;display: none;height: 8px;overflow: hidden;width: 0;}
+/*在线管理*/
+.online li .icon{cursor: pointer;width: 100px; height: 100px;position: absolute;top: 0;left: 0;z-index:4; border: 0; background-repeat: no-repeat;}
+.online li.selected .icon{display:block;width:96px; height:96px; border:2px solid #000;}
+.online li .icon:hover{width:96px; height:96px; border:2px solid #000;}
+.online li.selected .icon{background: url(images/edui.png) no-repeat; background-position:-4px -192px;}
+.online li.selected .icon:hover{width:96px; height:96px; border:2px solid #000;background-position: -4px -192px;}
+.online li p.title{top:0;}
+
+/*插入视频*/
+.videotop .url{font-weight: bold;margin-left: 5px;}
+.videotop .txt{height: 21px;line-height: 21px;margin: 8px 5px;}
+.videoPreview{position: relative;width: 330px;padding: 0;overflow: hidden;margin-left: 10px;_margin-left: 5px;height: 215px;background:url(images/muenhover.png);float: left;}
+.videoInfo {width: 135px;float: left;margin-left: 10px;_margin-left: 7px;}
+.videoAlign span{cursor: pointer;filter: alpha(opacity = 50);margin: 9px;_margin: 5px;width: 38px;height: 36px;float: left;}
+.videoinfo-mode{border: 1px solid #ddd;padding-left:5px;padding-bottom:5px;padding-right:10px;width:115px;}
+.videoinfo-mode legend{color:#333;}
+.videoAlign .none-align{background:url(images/edui.png) no-repeat -107px -140px;}
+.videoAlign .left-align{background:url(images/edui.png) no-repeat -152px -140px;}
+.videoAlign .right-align{background:url(images/edui.png) no-repeat -107px -184px;}
+.videoAlign .center-align{background:url(images/edui.png) no-repeat -152px -184px;}
+.videoAlign .none-align.curr{background:url(images/edui.png) no-repeat -107px -53px;}
+.videoAlign .left-align.curr{background:url(images/edui.png) no-repeat -152px -53px;}
+.videoAlign .right-align.curr{background:url(images/edui.png) no-repeat -107px -97px;}
+.videoAlign .center-align.curr{background:url(images/edui.png) no-repeat -152px -97px;}
+.upload_left,.uploadVideoInfo{ vertical-align:top;}
+.uploadVideoInfo{padding-right: 8px; padding-left: 10px;}
+.upload_left .queueList .statusBar{position:relative;}
+.upload_left .queueList .statusBar .btns{right: 0px;top: 0px;}
+
+
+.webuploader-container{display:inline-block; float:left;}
+.filePickerBtn.webuploader-container .webuploader-pick{display:inline-block; width:76px; height:25px; line-height:25px; padding:0; background:url(images/muenhover.png); border-radius:0;}
+.filePickerBlock.webuploader-container .webuploader-pick{display:inline-block; width:100px; height:100px; line-height:25px; padding:0; background:none; border-radius:0;}
+
+
+/*在线文件的文件预览图标*/
+.indertvideo.filelist li{width:100px; height:100px;}
+.indertvideo.filelist li p.imgWrap.notimage{width:100px; height:100px; position:absolute; top:0;}
+.indertvideo i.file-preview{background:url(../../img/file-icons.png) no-repeat; background-position:-140px center; display: block; margin: 22px auto 0;width: 70px;height: 70px;}
+i.file-preview.file-type-dir{ background-position: 0 center;}
+i.file-preview.file-type-file{background-position: -140px center;}
+i.file-preview.file-type-filelist{background-position: -210px center;}
+i.file-preview.file-type-zip,i.file-preview.file-type-rar,i.file-preview.file-type-7z,i.file-preview.file-type-tar,i.file-preview.file-type-gz,i.file-preview.file-type-bz2{background-position: -280px center;}
+i.file-preview.file-type-xls,i.file-preview.file-type-xlsx{ background-position: -350px center;}
+i.file-preview.file-type-doc,i.file-preview.file-type-docx{background-position: -420px center;}
+i.file-preview.file-type-ppt,i.file-preview.file-type-pptx{background-position: -490px center;}
+i.file-preview.file-type-vsd{background-position: -560px center;}
+i.file-preview.file-type-pdf{background-position: -630px center;}
+i.file-preview.file-type-txt,i.file-preview.file-type-md,i.file-preview.file-type-json,i.file-preview.file-type-htm,i.file-preview.file-type-xml,i.file-preview.file-type-html,i.file-preview.file-type-js,i.file-preview.file-type-css,i.file-preview.file-type-php,i.file-preview.file-type-jsp,i.file-preview.file-type-asp{background-position: -700px center;}
+i.file-preview.file-type-apk{background-position: -770px center;}
+i.file-preview.file-type-exe{background-position: -840px center;}
+i.file-preview.file-type-ipa{background-position: -910px center;}
+i.file-preview.file-type-mp4,i.file-preview.file-type-swf,i.file-preview.file-type-mkv,i.file-preview.file-type-avi,i.file-preview.file-type-flv,i.file-preview.file-type-mov,i.file-preview.file-type-mpg,i.file-preview.file-type-mpeg,i.file-preview.file-type-ogv,i.file-preview.file-type-webm,i.file-preview.file-type-rm,i.file-preview.file-type-rmvb{background-position: -980px center;}
+i.file-preview.file-type-ogg,i.file-preview.file-type-wav,i.file-preview.file-type-wmv,i.file-preview.file-type-mid,i.file-preview.file-type-mp3{ background-position: -1050px center;}
+i.file-preview.file-type-jpg,i.file-preview.file-type-jpeg,i.file-preview.file-type-gif,i.file-preview.file-type-bmp,i.file-preview.file-type-png,i.file-preview.file-type-psd{background-position: -140px center;}

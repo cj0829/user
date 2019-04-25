@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+  <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <script type="text/javascript" src="jquery-1.9.1.js"></script>
+   <script type="text/javascript" src="jwplayer.js"></script>
+   <title>视频播放--${system_name }</title>   
+</head>
+<body>  
+
+<div class="mainWindow">
+    <div class="mainTitle">
+      	<h3><button onclick="clickPlay()">重新加载播放</button></h3>
+      	<h3><button onclick="stop()">暂定</button></h3>
+    </div>
+    <div class="mainContainer">
+      	<div class="formBox">
+            <form action="" method="post" name="newsForm" id="newsForm">  
+	            <div class="formBoxButton">
+	            	<div id="mediaplayer">loader video</div> 
+		            
+	            </div>
+            </form>
+        </div>
+    </div>
+</div> 
+<script  type="text/javascript">   
+jQuery(document).ready(function(){ 
+	playerPlay();  
+});
+var tPlay;
+function clickPlay(){
+	playerPlay();  
+}
+function stop(){
+	tPlay.stop();
+}
+function playerPlay() {  
+	//streamer: "rtmp://192.168.10.19/oflaDemo",
+	tPlay=jwplayer("mediaplayer").setup({
+		flashplayer: "Player.swf",
+	    height: 360,
+	    playlist: [{
+	    	captions: [{
+				file:"http://127.0.0.1:8080/mediaFLV/video/1.srt",
+				label: "label",
+				'default': "true"
+			}],
+	        streamer: "rtmp://127.0.0.1/oflaDemo",
+	        file:"/201405301505157100146134164.flv",
+	        progress:true
+	    }],
+	    events: { 
+			onSeek:function(data,d,f,e){
+				//alert("adsf");
+			},
+			onMessageInterval:function(data,d,f,e){
+				alert("onMessageInterval:function");
+			},
+			onIntervalTime:function(data,d,f,e){
+				alert("onIntervalTime:function");
+			},
+			onPause:function(data){
+				alert(data);
+			}
+        },
+	    width: 640,
+	    messageinterval:4,
+	    autostart:true
+	});
+}
+</script>
+</html>

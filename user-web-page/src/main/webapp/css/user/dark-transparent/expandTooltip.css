@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+/*.tooltip-content a:hover{color:#999;}*/
+.error-tooltip.tooltip{background-color:#39443d;border-color:#39443d;}
+.error-tooltip .tooltip-content{color:#fff;}
+.error-tooltip.tooltip-right .tooltip-arrow-outer{border-right-color:#39443d;}
+.error-tooltip.tooltip-right .tooltip-arrow{border-right-color:#39443d;}
+.error-tooltip.tooltip-left .tooltip-arrow-outer{border-left-color:#39443d;}
+.error-tooltip.tooltip-left .tooltip-arrow{border-left-color:#39443d;}

@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+.calendar-state-default {
+	border: 1px solid #d3d3d3;
+	background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+	font-weight: 400;
+	color: #555;
+}
+
+.calendar-today {
+	border: 1px solid #fcefa1;
+	background: #fbf9ee;
+}
+
+.calendar-span-other-month {
+	background: #fff;
+}
+
+.calendar-selected {
+	background: #fff;
+	border: 1px solid #d3d3d3;
+}
+
+.calendar-hover {
+	border: 1px solid #d3d3d3;
+	background: #eaf2ff;
+	color: #363636;
+}
+
+.calendar-disabled {
+	opacity: 0.3;
+	filter: alpha(opacity = 30);
+	cursor: default;
+}
+
+.calendar-dtable td span {
+	display: block;
+	padding-bottom:1px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.calendar-body th {
+	background: none;
+}
+.main-formtab .calendar table td{
+	padding: 1px;
+}
+.main-formtab .calendar table th{
+	text-align: center;
+	padding: 0px;
+}
+.main-formtab .calendar table th{
+	color: #000;
+}
+.calendar-body {
+	padding: 0 2px 2px 2px;
+}
+
+.main-formtab .datebox-button td{padding:0;}
+
+/*****/
+.expand-date .combo-p,.expand-date .calendar-menu{background:url(images/bg.jpg) no-repeat fixed center center; padding:2px;}
+.expand-date .combo-panel{background:url(images/touming10.png) repeat;}
+.expand-date .calendar-body{background:none;}
+.expand-date .calendar-header{background:url(images/touming20.png) repeat;}
+.expand-date .calendar-title span{border-radius:0; color:#fff;}
+.expand-date .calendar-title .calendar-menu-hover,.expand-date .calendar-mtable .calendar-menu-month.calendar-menu-hover{background:url(images/touming20.png) repeat;}
+.expand-date .calendar-menu-year-inner,.expand-date .calendar-menu-month-inner{background:url(images/touming10.png) repeat;}
+.expand-date .calendar-mtable .calendar-menu-month{color:#fff; border-radius:0;}
+.expand-date .calendar-body th,.expand-date .calendar-menu-month{color:#fff;}
+.expand-date .calendar-span-other-month{background:url(images/touming20.png) repeat; color:#fff;}
+.expand-date .calendar-state-default{background:url(images/touming40.png) repeat; color:#fff; border:1px solid #202020;}
+.expand-date .calendar-today{background:url(images/toumingb40.png) repeat; color:#000;}
+.expand-date .calendar-hover{background:url(images/muenhover.png) repeat; border:1px solid #d3d3d3; color:#363636;}
+.expand-date .datebox-button{background:none;}
+.expand-date .datebox-button a{color:#fff;}
+.expand-date .datebox-button a:hover{color:#282828;}
+
+.expand-date .calendar-prevmonth.calendar-nav-hover{background:url(images/expand-easyui.png) no-repeat -40px -76px;}
+.expand-date .calendar-nextmonth.calendar-nav-hover{background:url(images/expand-easyui.png) no-repeat -56px -76px;}
+.expand-date .calendar-prevyear.calendar-nav-hover{background:url(images/expand-easyui.png) no-repeat -23px -76px;}
+.expand-date .calendar-nextyear.calendar-nav-hover{background:url(images/expand-easyui.png) no-repeat -71px -76px;}
+.expand-date .calendar-menu-prev.calendar-menu-hover{background:url(images/expand-easyui.png) no-repeat -20px -72px;}
+.expand-date .calendar-menu-next.calendar-menu-hover{background:url(images/expand-easyui.png) no-repeat -67px -72px;}
+
+

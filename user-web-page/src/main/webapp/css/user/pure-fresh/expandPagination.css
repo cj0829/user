@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main-tableContainer .datagrid .datagrid-pager{
+	background:#f3f3f3;
+	border:none;
+	padding:6px 0 6px 10px;
+	border-top:1px solid #e8e8e8;
+}
+.main-tableContainer .pagination table {
+  float: left;
+  /*height: 20px;*/
+}
+
+.main-tableContainer .datagrid-pager .l-btn {
+  color: #fff;
+  background:url("images/touming20.png");
+  background-repeat: repeat;
+  filter: none;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+  margin:0 2px;
+  outline:none;
+}
+
+.main-tableContainer .datagrid-pager  .l-btn-selected,
+.main-tableContainer .datagrid-pager  .l-btn-selected:hover {
+  background:#07A974;
+  filter: none;
+  color:#fff;
+}
+.e-expand-page .pagination-first,.mian-expand-page .pagination-first,.main-tableContainer .pagination-first,.pop-dropdownmenu-con .pagination-first,.form-tab-wrap .pagination-first {
+  background: url('images/pagebg.png') no-repeat -6px -1px;
+}
+.e-expand-page .pagination-prev,.mian-expand-page .pagination-prev,.main-tableContainer .pagination-prev,.pop-dropdownmenu-con .pagination-prev,.form-tab-wrap .pagination-prev {
+  background: url('images/pagebg.png') no-repeat -24px -1px;
+}
+.e-expand-page .pagination-next,.mian-expand-page .pagination-next,.main-tableContainer .pagination-next,.pop-dropdownmenu-con .pagination-next,.form-tab-wrap .pagination-next {
+  background: url('images/pagebg.png') no-repeat -40px -1px;
+}
+.e-expand-page .pagination-last,.mian-expand-page .pagination-last,.main-tableContainer .pagination-last,.pop-dropdownmenu-con .pagination-last,.form-tab-wrap .pagination-last {
+  background: url('images/pagebg.png') no-repeat -56px -1px;
+}
+.e-expand-page .pagination-load,.mian-expand-page .pagination-load,.main-tableContainer .pagination-load,.pop-dropdownmenu-con .pagination-load,.form-tab-wrap .pagination-load {
+  background: url('images/pagebg.png') no-repeat -77px -1px;
+}
+.e-expand-page .pagination-loading,.mian-expand-page .pagination-loading,.main-tableContainer .pagination-loading,.pop-dropdownmenu-con .pagination-loading,.form-tab-wrap .pagination-loading {
+  background: url('images/loading.gif') no-repeat center center;
+}
+.main-tableContainer .pagination-info{
+	margin:0 10px 0 0;
+}
+
+.main-formtab .pagination td{padding:0; color:#fff;}
+
+.mian-expand-page{ padding-top:5px;}
+.mian-expand-page .l-btn{background: none; border-radius:0; margin:0 2px;}
+.mian-expand-page .l-btn-plain-selected{ color: #fff;}
+
+.l-btn-plain{padding:0;}
+.e-expand-page .l-btn{background:url(images/touming20.png) repeat scroll 0 0;border-radius:0; margin:0 2px; border:1px solid transparent;}
+.e-expand-page .l-btn:hover,.main-tableContainer .l-btn-plain:hover{border:1px solid #07A974;}
+.e-expand-page .pagination-link .l-btn-text{color:#fff;}
+
+.main-tableContainer .pagination-page-list{margin:0;}
+.main-tableContainer .pagination .pagination-num,.e-expand-page .pagination .pagination-num,.mian-expand-page .pagination .pagination-num{background:url(images/touming30.png) repeat; color:#fff; border:1px solid #000; text-align:center; height:18px;}
+
+.pagination-link .l-btn-text{min-width:24px; padding:0 1px;width:auto !important;}
+
